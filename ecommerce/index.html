@@ -6,67 +6,170 @@
     <meta name="keywords" content="Futbol, Camisetas, Promocion, Baratas, Equipos">
     <meta name="description" content="Venta de camisetas de futbol autenticas y baratas">
     <meta name="author" content="Pablo & Albert">
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
     <title>TopFutbol</title>
 </head>
 <body>
-    <div id = "topBar">  
-        <div id = "seleccionador">
-            <select name="Ligas">
-                     <option value="Europeas">Ligas Europeas</option>
-                     <option value="Sudamericanas">Ligas Sudamericanas</option>
-                     <option value="Norteamericanas">Ligas Norteamericanas</option>
-                     <option value="Assiáticas">Ligas Asiáticas</option>
-                     <option value="Oceaía">Ligas Oceanía</option>
-                     <option value="Africanas">Ligas Africanas</option>
-            </select> 
-        </div>
-        
-        <img src="TopFutbol_Logo.png"   width="100" /><br />
-        
-        <div id "buscador">
-            <input type="text" placeholder="buscar" required>
-        </div>
-                
-        <ul id = "listaTopBar">
-            <li>CONTACTAR</li>
-            <li>AYUDA</li>
-            <li>TRABAJA CON NOSOTROS</li>
-            <li><strong>Iniciar Sesión</strong></li>
-        </ul>      
+    <header id="topheader">
+        <div class="contenedor-items-header">
+            <div id="desplegableLigas">
+                <nav id="navegadorLigas">
+                    <ul class="ligas">
+                        <li class="letras-header" id="lista1"><a href="#lista1">Ligas</a>
+                            <ul>
+                                <li><a href="" class="letras-header">Ligas Europeas</a></li>
+                                <li><a href="" class="letras-header">Ligas Sudamericanas</a></li>
+                                <li><a href="" class="letras-header">Ligas Norteamericanas</a></li>
+                                <li><a href="" class="letras-header">Ligas Asiáticas</a></li>
+                                <li><a href="" class="letras-header">Ligas Oceanía</a></li>
+                                <li><a href="" class="letras-header">Ligas Africanas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
 
-    </div>
-    
-    <div id = "contenidoPrincipal">
-        <div id = "destacados">
-            <h2>Destacados</h2>
+            <div id="logo-principal">
+                <a href="">
+                    <img src="img/TopFutbol_Logo.png" alt="Logo TopFutbol" width="150" />
+                </a>
+            </div>
+
+            <div id = "buscador">
+                <input type="text" id="barrabusqueda" placeholder="Buscar Camisetas" class="search" autocomplete="off">
+            </div>
+
+            <div class="inicio-sesion-carrito">
+                <div class="iniciosesion">
+                    <a href=""  class="letras-header">
+                        <div id="container-sesion">
+                            <div class="letras-sesion">
+                                <strong>Iniciar Sesión</strong>
+                            </div>
+                            <div class="logo-sesion">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <circle cx="12" cy="7" r="4" />
+                                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="carrito">
+                    <a href="">
+                        <!--<img src="img/ico/shopping-cart.ico" alt="Carrito De Compra" height="30" width="30">-->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="6" cy="19" r="2" />
+                            <circle cx="17" cy="19" r="2" />
+                            <path d="M17 17h-11v-14h-2" />
+                            <path d="M6 5l14 1l-1 7h-13" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </div>
-        
-        <div id = "topVentas">
-            <h2>Top Ventas</h2>
+    </header>
+
+    <main>
+        <div id = "contenidoPrincipal">
+            <div id = "destacados">
+                <h1>Destacados</h1>
+                <div class="contenedor-destacados">
+                    <a href="">
+                        <img src="img/banner-desktop-lanzamiento.png" alt="Camiseta Exclusiva Superclásico River Plate">
+                    </a>
+                </div>
+            </div>
+
+            <div class="topVentas">
+                <h1>Top Ventas</h1>
+                <div class="contenedor-top">
+                    <img src="img/Ligas/Europa/LaLiga/FCBarcelona/2021-2022.jpg" alt="Camiseta FC Barcelona 2021-2022" width="200" height="200"><br>
+                    <strong>Camiseta Nike FC Barcelona 2021-2022</strong><br>
+                </div>
+                <div class="contenedor-top">
+                    <img src="img/Ligas/Europa/SerieA/Juventus/2021-2022.jpg" alt="Camiseta Juventus 2021-2022" width="200" height="200"><br>
+                    <strong>Camiseta Adidas Juventus 2021-2022</strong><br>
+                </div>
+                <div class="contenedor-top">
+                    <img src="img/Ligas/Europa/Premier/MUnited/2021-2022.jpg" alt="Camiseta Machester United 2021-2022" width="200" height="200"><br>
+                    <strong>Camiseta Adidas Manchester United 2021-2022</strong><br>
+                </div>
+                <div class="contenedor-top">
+                    <img src="img/Ligas/Europa/Ligue1/PSG/2021-2022.jpg" alt="Camiseta PSG 2021-2022" width="200" height="200"><br>
+                    <strong>Camiseta Nike PSG 2021-2022</strong><br>
+                </div>
+            </div>
+
+            <div id = "rebajas">
+                <h1>Rebajas</h1>
+                <div class="contenedor-rebajas">
+                    <img src="img/Ligas/Europa/LaLiga/RealMadrid/2020-2021.jpg" alt="Camiseta Real Madrid 2020-2021" width="200" height="200"><br>
+                    <strong>Camiseta Adidas Real Madrid 2020-2021</strong><br>
+                </div>
+                <div class="contenedor-rebajas">
+                    <img src="img/Ligas/Europa/Premier/Liverpool/2020-2021.jpg" alt="Camiseta Liverpool 2020-2021" width="200" height="200"><br>
+                    <strong>Camiseta New Balance Liverpool 2020-2021</strong><br>
+                </div>
+                <div class="contenedor-rebajas">
+                    <img src="img/Ligas/Norteamerica/MLS/LAGalaxy/2020-2021.jpg" alt="Camiseta LA Galaxy 2020-2021" width="200" height="200"><br>
+                    <strong>Camiseta Adidas LA Galaxy 2020-2021</strong><br>
+                </div>
+                <div class="contenedor-rebajas">
+                    <img src="img/Ligas/Norteamerica/PrimeraMexico/America/2020-2021(Segunda).jpg" alt="Camiseta América Segunda Equipación 2020-2021" width="200" height="200"><br>
+                    <strong>Camiseta Adidas América Segunda Equipación 2020-2021</strong><br>
+                </div>
+            </div>
         </div>
-        
-        <div id = "rebajas">
-            <h2>Rebajas</h2>
-        </div>
-    </div>
-    
-    
+    </main>
+
     <footer>
-        <h3>Suscríbete a nuestra NEWSLETTER</h3>
-        <p>Recibe descuentos de escándalo antes que nadie</p>
-        
-        
-        <ul id ="redesSociales" >
-            <h3>Síguenos en nuestas Redes Sociales</h3>
-            <li> Instagram </li>
-            <li> Facebook </li>
-            <li> Twitter </li>
-            <li> TikTok </li>
-        </ul>
+        <div class="newletter">
+            <h2>Suscríbete a nuestra NEWSLETTER</h2>
+            <p>Recibe descuentos de escándalo antes que nadie</p>
+            <div class="boton-suscribirse">
+                <p>Suscríbete</p>
+            </div>
+        </div>
+
+        <h3>Síguenos en nuestas Redes Sociales</h3>
+        <div id="redesSociales">
+            <div class="contenedor-redessociales">
+                <img src="img/ico/instagram.ico" alt="Icono Instagram" height="30" width="30">
+                <p>Instagram</p>
+            </div>
+            <div class="contenedor-redessociales">
+                <img src="img/ico/facebook.ico" alt="Icono Facebook" height="30" width="30">
+                <p>Facebook</p>
+            </div>
+            <div class="contenedor-redessociales">
+                <img src="img/ico/twitter.ico" alt="Icono Twitter" height="30" width="30">
+                <p>Twitter</p>
+            </div>
+            <div class="contenedor-redessociales">
+                <img src="img/ico/tiktok.ico" alt="Icono TikTok" height="30" width="30">
+                <p>TikTok</p>
+            </div>
+        </div>
+
+        <div id="extrasFooter">
+            <div class="contenedor-extras">
+                <img src="img/ico/contact.ico" alt="Icono Contacto" height="30" width="30">
+                <p>CONTACTAR</p>
+            </div>
+            <div class="contenedor-extras">
+                <img src="img/ico/help.ico" alt="Icono Ayuda" height="30" width="30">
+                <p>AYUDA</p>
+            </div>
+            <div class="contenedor-extras">
+                <img src="img/ico/work-with-us.ico" alt="Icono Trabaja con Nosotros" height="30" width="30">
+                <p>TRABAJA CON NOSOTROS</p>
+            </div>
+        </div>
     </footer>
-
-
-
 </body>
 </html>
