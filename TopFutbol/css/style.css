@@ -1,3 +1,12 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    font-family: Calibri;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -6,7 +15,13 @@ html, body {
 header {
     background-color: black;
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+}
+
+a {
+    text-decoration: none;
 }
 
 header div {
@@ -14,31 +29,49 @@ header div {
     margin-right: 5rem;
 }
 
+.contenedor-items-header {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: auto;
+}
+
 .letras-header {
     text-decoration: none;
     color: white;
-    font-family: Calibri;
     font-style: normal;
     font-weight: 800;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .letras-header:hover {
-    color: darkgrey;
+    color: #FF8210;
 }
 
-.contenedor-items-header {
+.separador-nav {
     display: flex;
+    align-content: center;
     align-items: center;
     justify-content: center;
-    margin: 0 1.5rem 0 1.5rem;
 }
 
-#desplegableLigas {
-    margin: 0 1rem 0 0;
+#superior-menu {
+    height: 10rem;
+    width: auto;
+}
+
+#navegadorLigas {
+    margin: 0;
+    padding: 0;
+    height: 3rem;
 }
 
 #logo-principal {
-    margin-left: 1rem;
+    margin: 0;
+    padding: 0;
 }
 
 #barrabusqueda {
@@ -52,8 +85,13 @@ header div {
     border: 0.2rem solid #FF8210;
 }
 
+#buscador {
+    margin: auto;
+    padding: 0 30rem 0 30rem;
+}
+
 .iniciosesion {
-    margin: 0 0 0 0;
+    margin: 0;
 }
 
 #container-sesion {
@@ -67,16 +105,55 @@ header div {
 }
 
 .logo-sesion {
-    margin: 0 0 0 0;
+    margin: 0;
+}
+
+.logo-sesion:hover {
+    background: #FF8210;
+    border-radius: 1rem;
 }
 
 #carrito {
     margin: 0 0 0 1.5rem;
 }
 
+#carrito:hover {
+    background: #FF8210;
+    border-radius: 1rem;
+}
+
 .inicio-sesion-carrito {
     display: flex;
     margin-right: 0;
+    margin-left: 50;
+}
+
+#desplegableLigas {
+    margin: 0;
+}
+
+#desplegableLigas nav {
+    display: inline;
+}
+
+#navegadorLigas ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+
+#navegadorLigas ul li {
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.seleccion-liga a:hover {
+    color: white;
+}
+
+.seleccion-liga:hover {
+    background-color: #FF8210;
 }
 
 main {
