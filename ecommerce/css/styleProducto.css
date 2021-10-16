@@ -1,0 +1,242 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    font-family: Calibri;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+header div {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.contenedor-items-header {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: auto;
+}
+
+.letras-header {
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: 800;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.letras-header:hover {
+    color: #FF8210;
+}
+
+.separador-nav {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#superior-menu {
+    height: 10rem;
+    width: auto;
+}
+
+#navegadorLigas {
+    margin: 0;
+    padding: 0;
+    height: 3rem;
+}
+
+#logo-principal {
+    margin: 0;
+    padding: 0;
+}
+
+#barrabusqueda {
+    padding: 0.5rem 10rem 0.5rem 10rem;
+}
+
+#buscador input.search {
+    border-radius: 1rem;
+    outline: none;
+    color: darkgrey;
+    border: 0.2rem solid #FF8210;
+}
+
+#buscador {
+    margin: auto;
+    padding: 0 30rem 0 30rem;
+}
+
+.iniciosesion {
+    margin: 0;
+}
+
+#container-sesion {
+    display: flex;
+    margin: 0 2rem 0 2rem;
+    align-items: center;
+}
+
+.letras-sesion {
+    margin: 0 1rem 0 0;
+}
+
+.logo-sesion {
+    margin: 0;
+}
+
+.logo-sesion:hover {
+    background: #FF8210;
+    border-radius: 1rem;
+}
+
+#carrito {
+    margin: 0 0 0 1.5rem;
+}
+
+#carrito:hover {
+    background: #FF8210;
+    border-radius: 1rem;
+}
+
+.inicio-sesion-carrito {
+    display: flex;
+    margin-right: 0;
+    margin-left: 50;
+}
+
+#desplegableLigas {
+    margin: 0;
+}
+
+#desplegableLigas nav {
+    display: inline;
+}
+
+#navegadorLigas ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+
+#navegadorLigas ul li {
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.seleccion-liga a:hover {
+    color: white;
+}
+
+.seleccion-liga:hover {
+    background-color: #FF8210;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.contenidoPrincipalProducto {
+    display:flex;
+    margin-top:7rem;
+}
+
+.datosProducto {
+    background-color:#FFF9F3;
+    font-style: normal;
+    border-radius: 2%;
+
+}
+
+.precioProducto{
+    display:flex;
+}
+.labelPrecio{
+    font-weight: 800;
+    font-size: 140%;
+    padding-right:20%;
+}
+
+.labelGratuitos{
+    color:#999;
+}
+
+.infoPedido{
+    padding-bottom: 4%;
+}
+
+.contenedorSelecionadores{
+    display:flex;
+    
+}
+
+.etiquetaTallas{
+    padding-right: 2%;
+}
+.etiquetaUnidades{
+padding-right: 2%;
+}
+.selecionadorTallas{
+    padding-bottom: 4%;
+    padding-right: 20%;
+
+}
+
+.numeroUnidades{
+    width:150%;
+}
+
+.letraTalla{
+     width:230%;
+}
+.selecionadorUnidades{
+    padding-bottom: 4%;
+}
+
+.inputComprar {
+    background-color:#FF8210;
+    font-size: 180%;
+    font-weight: 800;    
+    padding-top:10 rem;
+    border-radius: 1rem;
+
+}
+.botonComprar {
+    padding-top:100 px;
+    margin-top: 10 rem;
+    text-align: center;
+}
+
+.divStock{
+text-align: center;
+padding-top:2%;
+}
+
+.labelStock{
+    color:#999;
+}
