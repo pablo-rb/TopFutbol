@@ -6,64 +6,89 @@
     <meta name="keywords" content="Futbol, Camisetas, Promocion, Baratas, Equipos">
     <meta name="description" content="Iniciar sesión en la cuenta de TopFutbol">
     <meta name="author" content="Pablo & Albert">
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <title>Registro | TopFutbol</title>
+    <link rel="stylesheet" type="text/css" href="../css/registro.css" />
+    <title>Crear Cuenta | TopFutbol</title>
 </head>
 <body>
 
     <form id="registro">
-        <fieldset id="registro1">
-            <legend>Crea tu cuenta de TopFutbol con estos sencillos pasos</legend>
-            
-            <fieldset id="registro2">
+            <div class="logo-form">
+                <legend>
+                    <a href="../index.html">
+                        <img src="../img/TopFutbol_Logo_Negro.png" class="topfutbol-logo">
+                    </a>
+                </legend>
+            </div>
+            <div class="divCrea">
+                <label class="labelCrea">Crea tu cuenta de TopFutbol con estos sencillos pasos</label>
+            </div>
+            <fieldset class="registro2">
 
-                <legend>DATOS DE ACCESO</legend>
-                
-                <div id="correoRegistro">
-                    <label>CORREO ELECTRÓNICO</label>
-                    <input type ="email" placeholder="Dirección de email" required>
-                </div>
-                
-                <div id="contraseñaRegistro">
-                    <label>CONTRASEÑA</label>
-                    <input type ="password" placeholder="Mínimo 8 caracteres" minlenght="8" required>
-                </div>
-                
-                <div id="confirmaContraseña">
-                    <label>CONFIRMA TU CONTRASEÑA</label>
-                    <input type ="password" placeholder="Confirmar contraseña" minlenght="8" required>
+                <legend class="labelDatos">DATOS DE ACCESO</legend>
+                <div class="datosAcceso">
+                    <div class="correoRegistro">
+                        <label>CORREO ELECTRÓNICO</label>
+                        <div id="divCorreo" class="divCampos">
+                            <input type ="email" placeholder="Dirección de email" required id="inputEmail" class="campos">
+                        </div>
+                    </div>
+                    <div class="contraseñas">
+                        <div class="contraseñaRegistro">
+                            <label>CONTRASEÑA</label>
+                            <div id="divContraseña" class="divCampos">
+                                <input type ="password" placeholder="Mínimo 8 caracteres" minlenght="8" required id="inputPassword" class="campos">
+                            </div>
+                        </div>
+                        
+                        <div class="confirmaContraseña">
+                            <label>CONFIRMA TU CONTRASEÑA</label>
+                            <div id="divConfirma" class="divCampos">
+                                <input type ="password" placeholder="Confirmar contraseña" minlenght="8" required id="inputConfirmar" class="campos">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
                
             </fieldset>
             
             
-            <fieldset id="registro3">
+            <fieldset class="registro3">
 
-                <legend>DATOS PERSONALES</legend>
-                
-                <div id="nombreRegistro">
-                    <label>NOMBRE</label>
-                    <input type ="text" placeholder="Nombre" required>
+                <legend class="labelDatos">DATOS PERSONALES</legend>
+                <div class="contenedorNombres">
+                    <div class="nombreApellido">
+                        <div class="nombreRegistro">
+                            <label class="label">NOMBRE</label>
+                            <div id="divNombre" class="divCampos">
+                                <input type ="text" placeholder="Nombre" required id="inputNombre" class="campos">
+                            </div>
+                        </div>
+                        
+                        <div class="apellidoRegistro1">
+                            <label>PRIMER APELLIDO</label>
+                            <div id="divApellido1" class="divCampos">
+                                <input type ="text" placeholder="Primer apellido" required id="inputApellido1" class="campos">
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="ApellidoTelefono">
+                        <div class="apellidoRegistro2">
+                            <label>SEGUNDO APELLIDO</label>
+                            <div id="divApellido2" class="divCampos">
+                                <input type ="text" placeholder="Segundo apellido" id="inputApellido2" class="campos">
+                            </div>
+                        </div>
+                        
+                        <div class="TELÉFONO">
+                            <label>TELÉFONO</label>
+                            <div id="divTelefono" class="divCampos">
+                                <input type ="tel" placeholder="Teléfono" required id="inputTelefono" class="campos">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
-                <div id="apellidoRegistro1">
-                    <label>PRIMER APELLIDO</label>
-                    <input type ="text" placeholder="Primer apellido" required>
-                </div>
-                
-                <div id="apellidoRegistro2">
-                    <label>SEGUNDO APELLIDO</label>
-                    <input type ="text" placeholder="Segundo apellido">
-                </div>
-                
-                <div id="TELÉFONO">
-                    <label>TELÉFONO</label>
-                    <input type ="tel" placeholder="Teléfono" required>
-                </div>
-                
-
-            </fieldset>
 
             <div id="crearCuenta">
                 <input type="submit" value="CREAR CUENTA">
