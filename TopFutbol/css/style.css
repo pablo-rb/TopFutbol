@@ -160,3 +160,62 @@ main {
     display: flex;
     justify-content: center;
 }
+
+.titulos {
+    background-color: black;
+    text-align: center;
+}
+
+.titulos h1 {
+    color: white;
+    padding: 1rem 0rem;
+}
+
+.contenedor-links-camisetas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-top {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 0.2rem solid black;
+    border-radius: 1rem;
+    background-color: #FF8210;
+    padding: 2rem 0;
+    height: 25rem;
+    width: 25rem;
+}
+
+.contenedor-top:hover {
+    box-shadow: 0rem 0.1rem 1rem 0.2rem black;
+    transform: scale(1.05);
+}
+
+.foto-camiseta img {
+    border-radius: 1rem;
+    border: 0.2rem solid black;
+}
+
+.letras-camiseta {
+    margin: 1rem 1rem 0rem 1rem;
+    color: white;
+}
+
+footer {
+    display: block;
+    background-color: black;
+    color: white;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.newletter {
+    padding: 3rem 0rem;
+}
+
+
+
+
