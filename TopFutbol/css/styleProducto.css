@@ -161,61 +161,95 @@ main {
     justify-content: center;
 }
 
-.titulos {
-    background-color: black;
-    text-align: center;
-}
-
-.titulos h1 {
-    color: white;
-    padding: 1rem 0rem;
-}
-
-.contenedor-links-camisetas {
-    display: flex;
-    justify-content: space-between;
-}
-
-.contenedor-top {
-    align-content: center;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    border: 0.2rem solid white;
-    border-radius: 1rem;
-    background-color: white;
+.imagenProducto {
+    border: 0.1rem solid white;
+    border-radius: 1rem 1rem;
+    margin-right: 4rem;
     padding: 2rem 0;
-    height: 25rem;
-    width: 25rem;
 }
 
-.contenedor-top:hover {
+.imagenProducto:hover {
     box-shadow: 0rem 0rem 2rem 0.5rem #999999;
     transform: scale(1.05);
 }
 
-.foto-camiseta img {
+.contenidoPrincipalProducto {
+    display:flex;
+    margin-top:7rem;
+}
+
+.datosProducto {
+    background-color:#FFF9F3;
+    font-style: normal;
+    border-radius: 2%;
+}
+
+.precioProducto{
+    display:flex;
+}
+
+.labelPrecio{
+    font-weight: 800;
+    font-size: 140%;
+    padding-right:20%;
+}
+
+.labelGratuitos{
+    color:#999;
+}
+
+.infoPedido{
+    padding-bottom: 4%;
+}
+
+.contenedorSelecionadores{
+    display:flex;
+    max-width: 25rem;
+    min-width: 25rem;
+
+}
+
+.etiquetaTallas{
+    padding-right: 2%;
+}
+.etiquetaUnidades{
+    padding-right: 2%;
+}
+.selecionadorTallas{
+    padding-bottom: 4%;
+    padding-right: 10%;
+}
+
+.numeroUnidades{
+    width: 5rem;
+}
+
+.letraTalla{
+     width: 5rem;
+}
+.selecionadorUnidades{
+    padding-bottom: 4%;
+}
+
+.inputComprar {
+    background-color:#FF8210;
+    font-size: 150%;
+    font-weight: 800;
+    padding: 1rem 1rem;
     border-radius: 1rem;
-    border: 0.2rem solid white;
 }
 
-.letras-camiseta {
-    margin: 1rem 1rem 0rem 1rem;
-    color: black;
-}
-
-footer {
-    display: block;
-    background-color: black;
-    color: white;
-    margin-top: 5rem;
+.botonComprar {
+    padding: 1rem 1rem;
+    margin-top: 10 rem;
     text-align: center;
 }
 
-.newletter {
-    padding: 3rem 0rem;
+.divStock{
+text-align: center;
+padding-top:2%;
 }
 
-
-
-
+.labelStock{
+    color:#999;
+}
