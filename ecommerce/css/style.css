@@ -160,3 +160,121 @@ main {
     display: flex;
     justify-content: center;
 }
+
+.titulos {
+    background-color: black;
+    text-align: center;
+}
+
+.titulos h1 {
+    color: white;
+    padding: 1rem 0rem;
+}
+
+.contenedor-links-camisetas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-top {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 0.2rem solid white;
+    border-radius: 1rem;
+    background-color: white;
+    padding: 2rem 0;
+    height: 25rem;
+    width: 25rem;
+}
+
+.contenedor-top:hover {
+    box-shadow: 0rem 0rem 2rem 0.5rem #999999;
+    transform: scale(1.05);
+}
+
+.foto-camiseta img {
+    border-radius: 1rem;
+    border: 0.2rem solid white;
+}
+
+.letras-camiseta {
+    margin: 1rem 1rem 0rem 1rem;
+    color: black;
+}
+
+footer {
+    display: block;
+    background-color: black;
+    color: white;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+#redesSociales{
+    display:flex;
+    justify-content: center;
+}
+
+.contenedor-redessociales{
+    padding: 0rem 1rem 0rem 1rem;
+    
+    
+}
+
+.contenedor-redessociales:hover{
+    transform: scale(1.05);
+    cursor:pointer;
+
+}
+
+#extrasFooter{
+    display:flex;
+    justify-content: center;
+}
+
+.contenedor-extras{
+    padding: 0rem 2rem 2rem 2rem;
+}
+
+.newletter {
+    padding: 3rem 0rem;
+}
+
+#inputMail{
+    border-radius: 1rem;
+    outline: none;
+    color: dark;
+    border: 0.2rem solid #FF8210;
+    width: 20%;
+    height: 2.3rem;
+}
+
+#inputSuscribirse{
+    border-radius: 1rem;
+    outline: none;
+    color: dark;
+    border: 0.2rem solid #FF8210;
+    height: 2.9rem;
+    font-weight:800;
+
+}
+
+#inputSuscribirse:hover{
+    color: white;
+    background-color:#FF8210;
+    cursor:pointer;
+}
+
+.letras-extras:hover{
+    color:#FF8210;
+    cursor:pointer;
+}
+
+#contenedorMail{
+    display:flex;
+    justify-content:center;
+}
+
+
