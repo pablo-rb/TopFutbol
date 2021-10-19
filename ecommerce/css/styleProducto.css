@@ -164,6 +164,7 @@ main {
 .contenidoPrincipalProducto {
     display:flex;
     margin-top:7rem;
+    padding-bottom: 7rem;
 }
 
 .datosProducto {
@@ -239,4 +240,91 @@ padding-top:2%;
 
 .labelStock{
     color:#999;
+}
+
+footer {
+    display: block;
+    background-color: black;
+    color: white;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+#redesSociales{
+    display:flex;
+    justify-content: center;
+
+}
+
+.labelRedSocial{
+    text-decoration: none;
+    color: white
+
+}
+.contenedor-redessociales{
+    padding: 0rem 1rem 0rem 1rem; 
+    
+    
+}
+
+.contenedor-redessociales:hover{
+    transform: scale(1.05);
+    cursor:pointer;
+
+}
+
+#extrasFooter{
+    display:flex;
+    justify-content: center;
+}
+
+.contenedor-extras{
+    padding: 0rem 2rem 2rem 2rem;
+}
+
+.newletter {
+    padding: 3rem 0rem 2rem 0rem;
+}
+
+.redes {
+    padding: 3rem 0rem 2rem 10rem;
+}
+
+#inputMail{
+    border-radius: 1rem;
+    outline: none;
+    color: dark;
+    border: 0.2rem solid #FF8210;
+    width: 35rem;
+    height: 2.3rem;
+}
+
+#inputSuscribirse{
+    border-radius: 1rem;
+    outline: none;
+    color: dark;
+    border: 0.2rem solid #FF8210;
+    height: 2.9rem;
+    font-weight:800;
+
+}
+
+#inputSuscribirse:hover{
+    color: white;
+    background-color:#FF8210;
+    cursor:pointer;
+}
+
+.letras-extras:hover{
+    color:#FF8210;
+    cursor:pointer;
+}
+
+#contenedorMail{
+    display:flex;
+    justify-content:center;
+}
+#contenedor-newLetter-redesSociales{
+    display:flex;
+    justify-content:center;
 }
