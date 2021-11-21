@@ -6,9 +6,9 @@
     <meta name="keywords" content="Futbol, Camisetas, Promocion, Baratas, Equipos">
     <meta name="description" content="Venta de camisetas de futbol autenticas y baratas">
     <meta name="author" content="Pablo & Albert">
-    <link rel="preload" href="css/style.css" as="style">
-    <link rel="stylesheet" href="../css/style.css">
-    <script type="text/javascript" src="../scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="vistes/desplegableUsuario.js"></script>
     <title>TopFutbol</title>
 </head>
 <body>
@@ -27,21 +27,48 @@
                 </div>
 
                 <div class="inicio-sesion-carrito">
-                    <div class="iniciosesion">
-                        <a href="../secondary/iniciarSesion.html">
-                            <div id="container-sesion">
-                                <div class="letras-sesion letras-header">
-                                    <strong>Iniciar Sesión</strong>
-                                </div>
-                                <div class="logo-sesion">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                        <circle cx="12" cy="7" r="4" />
-                                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
+
+                    <!--
+                    <div id="btn-usuario-not-logged">
+                        <nav id="btn-usuario">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <circle cx="12" cy="7" r="4" />
+                                            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                                        </svg>
+                                    </a>
+                                    <ul id="toggle-post-ini">
+                                        <li><span id="iniciar-sesion"><a href="vistes/iniciarSesion.html"><strong>Iniciar Sesión</strong></a></li></span>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    -->
+
+
+                    <div id="btn-usuario-logged">
+                        <nav id="btn-usuario">
+                            <ul>
+                                <li>
+                                    <a href="vistes/iniciarSesion.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <circle cx="12" cy="7" r="4" />
+                                            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                                        </svg>
+                                    </a>
+                                    <ul id="toggle-post-ini">
+                                        <li><span id="mi-cuenta"><a href="#"><strong>Mi Cuenta</strong></a></li></span>
+                                        <li><span id="mis-compras"><a href="#"><strong>Mis Compras</strong></a></li></span>
+                                        <li><span id="cerrar-sesion"><a href="#"><strong>Cerrar Sesión</strong></a></li></span>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
 
                     <div id="carrito">
@@ -64,22 +91,22 @@
                     <nav id="navegadorLigas">
                         <ul>
                             <span class="seleccion-liga">
-                                <li><a href="#" class="letras-header">Ligas Europeas</a></li>
+                                <li><a href="#" class="letras-header">LaLiga</a></li>
                             </span>
                             <span class="seleccion-liga">
-                                <li><a href="#" class="letras-header">Ligas Sudamericanas</a></li>
+                                <li><a href="#" class="letras-header">Premier League</a></li>
                             </span>
                             <span class="seleccion-liga">
-                                <li><a href="#" class="letras-header">Ligas Norteamericanas</a></li>
+                                <li><a href="#" class="letras-header">Bundesliga</a></li>
                             </span>
                             <span class="seleccion-liga">
-                                <li><a href="#" class="letras-header">Ligas Asiáticas</a></li>
+                                <li><a href="#" class="letras-header">Ligue1</a></li>
                             </span>
                             <span class="seleccion-liga">
-                                <li><a href="#" class="letras-header">Ligas Oceanía</a></li>
+                                <li><a href="#" class="letras-header">Serie A</a></li>
                             </span>
                             <span class="seleccion-liga">
-                                <li><a href="#" class="letras-header">Ligas Africanas</a></li>
+                                <li><a href="#" class="letras-header">Otras</a></li>
                             </span>
                         </ul>
                     </nav>
@@ -107,7 +134,7 @@
                     <h1>Top Ventas</h1>
                 </div>
                 <div class="contenedor-links-camisetas">
-                    <a href="../secondary/producto.html">
+                    <a href="../vistes/producto.html">
                         <div class="contenedor-top">
                         <div class="foto-camiseta">
                             <img src="../img/Ligas/Europa/LaLiga/FCBarcelona/2021-2022.jpg" alt="Camiseta FC Barcelona 2021-2022" width="200" height="200"><br>
@@ -214,7 +241,7 @@
                     </div>
                 </form>
             </div>
-    
+
             <div class="redes">
                 <div class="letras-redes">
                     <h3>Síguenos en nuestas Redes Sociales</h3>

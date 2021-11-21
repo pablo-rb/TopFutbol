@@ -36,7 +36,7 @@ function insertaUsuario($connexio){
     else
     {
         //insertar nuevo usuario
-        $sql2 = "INSERT INTO usuarios (email, nombre, apellido1, apellido2, contrasena, direccion, poblacion, codigopostal) 
+        $sql2 = "INSERT INTO usuarios (email, nombre, apellido1, apellido2, contraseña, direccion, poblacion, codigopostal) 
                     VALUES (:email, :nombre, :apellido1, :apellido2, :contrasena, :direccion, :poblacion, :codigopostal)";
 
         $consulta2 = $connexio->prepare($sql2);
@@ -55,9 +55,9 @@ function insertaUsuario($connexio){
 
         if ($consulta2->execute())
         {
-          echo "New record created successfully";
+          //echo "New record created successfully";
         }else {
-          echo "Unable to create record";
+          //echo "Unable to create record";
         }
     }
    return 1;

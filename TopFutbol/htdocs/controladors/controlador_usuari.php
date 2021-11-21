@@ -9,14 +9,18 @@
 
     if ($correoCorrecto == 0)
     {
-        include_once __DIR__ . "/../secondary/registro.html";
-        ?>
-        <script type="text/javascript">
-            document.getElementById("correoEnUso").style.visibility = 'visible';
-        </script>
-        <?php
+        include_once __DIR__ . "/../vistes/registro.html";
+        include_once __DIR__ . "/../vistes/emailEnUso.js";
+        
     }
-    else{
-        include_once __DIR__ . "/../secondary/iniciarSesion.html";
+    else
+    {
+        include_once __DIR__ . "/../vistes/iniciarSesion.html";
     }
+    
+    
+    
+
         ?>
+        
+        

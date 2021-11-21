@@ -91,27 +91,55 @@ header div {
     padding: 0 30rem 0 30rem;
 }
 
-.iniciosesion {
-    margin: 0;
-}
+/**------------------------------------------------------------------------------------**/
+/**ACTUALIZACION DESPLEGABLE MENU INICIO DE SESION CON JQUERY**/
 
-#container-sesion {
+.inicio-sesion-carrito {
     display: flex;
-    margin: 0 2rem 0 2rem;
-    align-items: center;
+    margin-right: 0;
+    margin-left: 5rem;
+}
+/**
+#btn-usuario-not-logged {
+    display: initial;
+}
+**/
+
+#btn-usuario-logged {
+    display: initial;
 }
 
-.letras-sesion {
-    margin: 0 1rem 0 0;
-}
 
-.logo-sesion {
+#btn-usuario ul {
+    list-style: none;
     margin: 0;
+    padding: 0;
 }
 
-.logo-sesion:hover {
-    background: #FF8210;
-    border-radius: 1rem;
+#btn-usuario a {
+    display: block;
+    color: white;
+    width: 10rem;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+}
+
+#icono-usuario:hover {
+    background-color: grey;
+}
+
+#toggle-post-ini {
+    position: absolute;
+    display: none;
+}
+
+#toggle-post-ini a {
+    background-color: #FF8210;
+}
+
+#toggle-post-ini a:hover {
+    background-color: #ffa365;
 }
 
 #carrito {
@@ -123,11 +151,7 @@ header div {
     border-radius: 1rem;
 }
 
-.inicio-sesion-carrito {
-    display: flex;
-    margin-right: 0;
-    margin-left: 50;
-}
+/**------------------------------------------------------------------------------------**/
 
 #desplegableLigas {
     margin: 0;

@@ -90,6 +90,12 @@ padding-top:4%;
 width:200%;
 }
 
+#correoEnUso{
+width:245%;
+color:red;
+visibility:hidden;
+}
+
 
 .confirmaContraseña{
 padding-top:0%;

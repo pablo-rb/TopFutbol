@@ -13,22 +13,15 @@
     }
     else
     {
-        include_once __DIR__ . "/../secondary/iniciarSesion.html";
+        include_once __DIR__ . "/../vistes/iniciarSesion.html";
         if ($error == 1)
         {
-            ?>
-                <script type="text/javascript">
-                 document.getElementById("contraseñaErronea").style.visibility = 'visible';
-                </script>
-            <?php
+                include_once __DIR__ . "/../vistes/contraseñaErronea.js";
+
         }
         else
         {
-            ?>
-                <script type="text/javascript">
-                 document.getElementById("emailErroneo").style.visibility = 'visible';
-                </script>
-            <?php
+                include_once __DIR__ . "/../vistes/emailErroneo.js";
         }
 
     }
