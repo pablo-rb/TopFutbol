@@ -8,7 +8,7 @@
     <meta name="author" content="Pablo & Albert">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="vistes/desplegableUsuario.js"></script>
+    <script type="text/javascript" src="vistes/menusDesplegables.js"></script>
     <title>TopFutbol</title>
 </head>
 <body>
@@ -73,7 +73,7 @@
 
                     <div id="carrito">
                         <a href="#">
-                            
+
                             <!--<img src="../img/ico/shopping-cart.ico" alt="Carrito De Compra" height="30" width="30">-->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -87,31 +87,64 @@
                 </div>
             </div>
             <div id="navegador-ligas" class="separador-nav">
-                <div id="desplegableLigas">
-                    <nav id="navegadorLigas">
-                        <ul>
-                            <span class="seleccion-liga">
-                                <li><a href="#" class="letras-header">LaLiga</a></li>
-                            </span>
-                            <span class="seleccion-liga">
-                                <li><a href="#" class="letras-header">Premier League</a></li>
-                            </span>
-                            <span class="seleccion-liga">
-                                <li><a href="#" class="letras-header">Bundesliga</a></li>
-                            </span>
-                            <span class="seleccion-liga">
-                                <li><a href="#" class="letras-header">Ligue1</a></li>
-                            </span>
-                            <span class="seleccion-liga">
-                                <li><a href="#" class="letras-header">Serie A</a></li>
-                            </span>
-                            <span class="seleccion-liga">
-                                <li><a href="#" class="letras-header">Otras</a></li>
-                            </span>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+                <nav id="menu-desplegable-ligas">
+                    <ul id="contenedores-ligas">
+                        <li>
+                            <a href="#" class="letras-header">LaLiga</a>
+                            <ul>
+                                <li><a href="../vistes/producto.html">FC Barcelona</a></li>
+                                <li><a href="#">Real Madrid</a></li>
+                                <li><a href="#">Atlético de Madrid</a></li>
+                                <li><a href="#">Sevilla</a></li>
+                                <li><a href="#">Valencia</a></li>
+                                <li><a href="#">Athletic Bilbao</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="letras-header">Premier League</a>
+                            <ul>
+                                <li><a href="#">Chelsea FC</a></li>
+                                <li><a href="#">Manchester United</a></li>
+                                <li><a href="#">Manchester City</a></li>
+                                <li><a href="#">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="letras-header">Bundesliga</a>
+                            <ul>
+                                <li><a href="#">Bayern de Múnich</a></li>
+                                <li><a href="#">Borussia Dortmund</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="letras-header">Ligue1</a>
+                            <ul>
+                                <li><a href="#">PSG</a></li>
+                                <li><a href="#">AS Mónaco</a></li>
+                                <li><a href="#">O. Lyon</a></li>
+                                <li><a href="#">O. Marsella</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="letras-header">Serie A</a>
+                            <ul>
+                                <li><a href="#">Juventus</a></li>
+                                <li><a href="#">Inter</a></li>
+                                <li><a href="#">AC Milán</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="letras-header">Otras</a>
+                            <ul>
+                                <li><a href="#">River Plate</a></li>
+                                <li><a href="#">Ajax</a></li>
+                                <li><a href="#">Benfica</a></li>
+                                <li><a href="#">Shakhtar</a></li>
+                                <li><a href="#">Flamengo</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>

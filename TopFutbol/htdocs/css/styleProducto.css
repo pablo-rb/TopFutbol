@@ -22,6 +22,7 @@ header {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 header div {
@@ -38,17 +39,8 @@ header div {
 }
 
 .letras-header {
-    text-decoration: none;
-    color: white;
     font-style: normal;
     font-weight: 800;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.letras-header:hover {
-    color: #FF8210;
 }
 
 .separador-nav {
@@ -90,27 +82,55 @@ header div {
     padding: 0 30rem 0 30rem;
 }
 
-.iniciosesion {
-    margin: 0;
-}
+/**------------------------------------------------------------------------------------**/
+/**ACTUALIZACION DESPLEGABLE MENU INICIO DE SESION CON JQUERY**/
 
-#container-sesion {
+.inicio-sesion-carrito {
     display: flex;
-    margin: 0 2rem 0 2rem;
-    align-items: center;
+    margin-right: 0;
+    margin-left: 5rem;
+}
+/**
+#btn-usuario-not-logged {
+    display: initial;
+}
+**/
+
+#btn-usuario-logged {
+    display: initial;
 }
 
-.letras-sesion {
-    margin: 0 1rem 0 0;
-}
 
-.logo-sesion {
+#btn-usuario ul {
+    list-style: none;
     margin: 0;
+    padding: 0;
 }
 
-.logo-sesion:hover {
-    background: #FF8210;
-    border-radius: 1rem;
+#btn-usuario a {
+    display: block;
+    color: white;
+    width: 10rem;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+}
+
+#icono-usuario:hover {
+    background-color: grey;
+}
+
+#toggle-post-ini {
+    position: absolute;
+    display: none;
+}
+
+#toggle-post-ini a {
+    background-color: #FF8210;
+}
+
+#toggle-post-ini a:hover {
+    background-color: #ffa365;
 }
 
 #carrito {
@@ -122,39 +142,47 @@ header div {
     border-radius: 1rem;
 }
 
-.inicio-sesion-carrito {
-    display: flex;
-    margin-right: 0;
-    margin-left: 50;
-}
+/**------------------------------------------------------------------------------------**/
+/**MENU DESPLEGABLE LIGAS CON JQUERY**/
 
-#desplegableLigas {
-    margin: 0;
-}
-
-#desplegableLigas nav {
-    display: inline;
-}
-
-#navegadorLigas ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    list-style: none;
-}
-
-#navegadorLigas ul li {
-    padding: 1rem 2rem;
+#menu-desplegable-ligas a {
+    display: block;
+    width: 15rem;
+    height: 5rem;
     text-align: center;
+    line-height: 5rem;
+    background-color: black;
 }
 
-.seleccion-liga a:hover {
+#menu-desplegable-ligas a:hover {
+    background-color: #FF8210;
+}
+
+#menu-desplegable-ligas>ul>li>ul>li {
+    position: relative;
+}
+
+#menu-desplegable-ligas>ul>li>ul>li>a:hover {
+    background: #ffa365;
     color: white;
 }
 
-.seleccion-liga:hover {
-    background-color: #FF8210;
+#menu-desplegable-ligas ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
 }
+
+#menu-desplegable-ligas>ul>li>ul {
+    display: none;
+}
+
+#contenedores-ligas {
+    display: flex;
+}
+
+/**------------------------------------------------------------------------------------**/
+
 
 main {
     display: flex;
@@ -171,7 +199,6 @@ main {
     background-color:#FFF9F3;
     font-style: normal;
     border-radius: 2%;
-
 }
 
 .precioProducto{
@@ -193,7 +220,6 @@ main {
 
 .contenedorSelecionadores{
     display:flex;
-    
 }
 
 .etiquetaTallas{
@@ -205,11 +231,10 @@ padding-right: 2%;
 .selecionadorTallas{
     padding-bottom: 4%;
     padding-right: 20%;
-
 }
 
 .numeroUnidades{
-    width:150%;
+    width: 80%;
 }
 
 .letraTalla{
@@ -218,6 +243,7 @@ padding-right: 2%;
 .selecionadorUnidades{
     padding-bottom: 4%;
 }
+
 
 .inputComprar {
     background-color:#FF8210;

@@ -22,8 +22,8 @@ header {
 
 a {
     text-decoration: none;
+    color: white;
 }
-
 
 header div {
     margin-left: 5rem;
@@ -39,17 +39,8 @@ header div {
 }
 
 .letras-header {
-    text-decoration: none;
-    color: white;
     font-style: normal;
     font-weight: 800;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.letras-header:hover {
-    color: #FF8210;
 }
 
 .separador-nav {
@@ -152,34 +143,45 @@ header div {
 }
 
 /**------------------------------------------------------------------------------------**/
+/**MENU DESPLEGABLE LIGAS CON JQUERY**/
 
-#desplegableLigas {
-    margin: 0;
-}
-
-#desplegableLigas nav {
-    display: inline;
-}
-
-#navegadorLigas ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    list-style: none;
-}
-
-#navegadorLigas ul li {
-    padding: 1rem 2rem;
+#menu-desplegable-ligas a {
+    display: block;
+    width: 15rem;
+    height: 5rem;
     text-align: center;
+    line-height: 5rem;
+    background-color: black;
 }
 
-.seleccion-liga a:hover {
+#menu-desplegable-ligas a:hover {
+    background-color: #FF8210;
+}
+
+#menu-desplegable-ligas>ul>li>ul>li {
+    position: relative;
+}
+
+#menu-desplegable-ligas>ul>li>ul>li>a:hover {
+    background: #ffa365;
     color: white;
 }
 
-.seleccion-liga:hover {
-    background-color: #FF8210;
+#menu-desplegable-ligas ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
 }
+
+#menu-desplegable-ligas>ul>li>ul {
+    display: none;
+}
+
+#contenedores-ligas {
+    display: flex;
+}
+
+/**------------------------------------------------------------------------------------**/
 
 main {
     display: flex;
