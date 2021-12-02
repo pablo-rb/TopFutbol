@@ -219,6 +219,7 @@ main {
 .contenedor-top:hover {
     box-shadow: 0rem 0rem 2rem 0.5rem #999999;
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .foto-camiseta img {

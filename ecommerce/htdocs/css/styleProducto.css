@@ -195,6 +195,8 @@ main {
     padding-bottom: 7rem;
 }
 
+
+
 .datosProducto {
     background-color:#FFF9F3;
     font-style: normal;
@@ -353,4 +355,15 @@ footer {
 #contenedor-newLetter-redesSociales{
     display:flex;
     justify-content:center;
+}
+
+.formularioPedido
+{
+
+width: 39rem;
+}
+
+.tituloProducto
+{
+text-align:center;
 }
