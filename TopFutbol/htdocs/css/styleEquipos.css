@@ -198,6 +198,10 @@ main {
     padding: 1rem 0rem;
 }
 
+main section {
+    width: 70%;
+}
+
 .contenedor-links-categorias {
     display: flex;
     justify-content: space-around;
@@ -222,12 +226,12 @@ main {
     transform: scale(1.05);
 }
 
-.foto-liga img {
+.foto-camiseta img {
     border-radius: 1rem;
     border: 0.2rem solid white;
 }
 
-.letras-liga {
+.letras-camiseta {
     margin: 1rem 1rem 0rem 1rem;
     color: black;
 }
@@ -252,9 +256,9 @@ footer {
 
 }
 .contenedor-redessociales{
-    padding: 0rem 1rem 0rem 1rem; 
-    
-    
+    padding: 0rem 1rem 0rem 1rem;
+
+
 }
 
 .contenedor-redessociales:hover{

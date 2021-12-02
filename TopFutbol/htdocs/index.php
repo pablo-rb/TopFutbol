@@ -49,7 +49,6 @@
                     </div>
                     -->
 
-
                     <div id="btn-usuario-logged">
                         <nav id="btn-usuario">
                             <ul>
@@ -62,9 +61,9 @@
                                         </svg>
                                     </a>
                                     <ul id="toggle-post-ini">
-                                        <li><span id="mi-cuenta"><a href="#"><strong>Mi Cuenta</strong></a></li></span>
-                                        <li><span id="mis-compras"><a href="#"><strong>Mis Compras</strong></a></li></span>
-                                        <li><span id="cerrar-sesion"><a href="#"><strong>Cerrar Sesión</strong></a></li></span>
+                                        <li><span id="mi-cuenta"><a href="#"><strong>Mi Cuenta</strong></a></span></li>
+                                        <li><span id="mis-compras"><a href="#"><strong>Mis Compras</strong></a></span></li>
+                                        <li><span id="cerrar-sesion"><a href="#"><strong>Cerrar Sesión</strong></a></span></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -93,54 +92,54 @@
                             <a href="#" class="letras-header">LaLiga</a>
                             <ul>
                                 <li><a href="../vistes/producto.html">FC Barcelona</a></li>
-                                <li><a href="#">Real Madrid</a></li>
-                                <li><a href="#">Atlético de Madrid</a></li>
-                                <li><a href="#">Sevilla</a></li>
-                                <li><a href="#">Valencia</a></li>
-                                <li><a href="#">Athletic Bilbao</a></li>
+                                <li><a href="../vistes/producto.html">Real Madrid</a></li>
+                                <li><a href="../vistes/producto.html">Atlético de Madrid</a></li>
+                                <li><a href="../vistes/producto.html">Sevilla</a></li>
+                                <li><a href="../vistes/producto.html">Valencia</a></li>
+                                <li><a href="../vistes/producto.html">Athletic Bilbao</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#" class="letras-header">Premier League</a>
                             <ul>
-                                <li><a href="#">Chelsea FC</a></li>
-                                <li><a href="#">Manchester United</a></li>
-                                <li><a href="#">Manchester City</a></li>
-                                <li><a href="#">Liverpool</a></li>
+                                <li><a href="../vistes/producto.html">Chelsea FC</a></li>
+                                <li><a href="../vistes/producto.html">Manchester United</a></li>
+                                <li><a href="../vistes/producto.html">Manchester City</a></li>
+                                <li><a href="../vistes/producto.html">Liverpool</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#" class="letras-header">Bundesliga</a>
                             <ul>
-                                <li><a href="#">Bayern de Múnich</a></li>
-                                <li><a href="#">Borussia Dortmund</a></li>
+                                <li><a href="../vistes/producto.html">Bayern de Múnich</a></li>
+                                <li><a href="../vistes/producto.html">Borussia Dortmund</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#" class="letras-header">Ligue1</a>
                             <ul>
-                                <li><a href="#">PSG</a></li>
-                                <li><a href="#">AS Mónaco</a></li>
-                                <li><a href="#">O. Lyon</a></li>
-                                <li><a href="#">O. Marsella</a></li>
+                                <li><a href="../vistes/producto.html">PSG</a></li>
+                                <li><a href="../vistes/producto.html">AS Mónaco</a></li>
+                                <li><a href="../vistes/producto.html">O. Lyon</a></li>
+                                <li><a href="../vistes/producto.html">O. Marsella</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#" class="letras-header">Serie A</a>
                             <ul>
-                                <li><a href="#">Juventus</a></li>
-                                <li><a href="#">Inter</a></li>
-                                <li><a href="#">AC Milán</a></li>
+                                <li><a href="../vistes/producto.html">Juventus</a></li>
+                                <li><a href="../vistes/producto.html">Inter</a></li>
+                                <li><a href="../vistes/producto.html">AC Milán</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#" class="letras-header">Otras</a>
                             <ul>
-                                <li><a href="#">River Plate</a></li>
-                                <li><a href="#">Ajax</a></li>
-                                <li><a href="#">Benfica</a></li>
-                                <li><a href="#">Shakhtar</a></li>
-                                <li><a href="#">Flamengo</a></li>
+                                <li><a href="../vistes/producto.html">River Plate</a></li>
+                                <li><a href="../vistes/producto.html">Ajax</a></li>
+                                <li><a href="../vistes/producto.html">Benfica</a></li>
+                                <li><a href="../vistes/producto.html">Shakhtar</a></li>
+                                <li><a href="../vistes/producto.html">Flamengo</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -162,96 +161,70 @@
                 </div>
             </section>
 
-            <section id="topVentas">
+            <section id="categoriasMain">
                 <div class="titulos">
-                    <h1>Top Ventas</h1>
+                    <h1>Ligas</h1>
                 </div>
-                <div class="contenedor-links-camisetas">
-                    <a href="../vistes/producto.html">
+                <div class="contenedor-links-categorias">
+                    <a href="../vistes/equipos.html">
                         <div class="contenedor-top">
-                        <div class="foto-camiseta">
-                            <img src="../img/Ligas/Europa/LaLiga/FCBarcelona/2021-2022.jpg" alt="Camiseta FC Barcelona 2021-2022" width="200" height="200"><br>
+                        <div class="foto-liga">
+                            <img src="../img/Ligas/Categorias/laliga_logo.jpg" alt="Logo LaLiga" width="200" height="200"><br>
                         </div>
-                        <div class="letras-camiseta">
-                            <strong>Camiseta Nike FC Barcelona 2021-2022</strong><br>
+                        <div class="letras-liga">
+                            <strong>LaLiga</strong><br>
                         </div>
                     </div>
                     </a>
-                    <a href="#">
+                    <a href="../vistes/equipos.html">
                         <div class="contenedor-top">
-                        <div class="foto-camiseta">
-                            <img src="../img/Ligas/Europa/SerieA/Juventus/2021-2022.jpg" alt="Camiseta Juventus 2021-2022" width="200" height="200"><br>
-                        </div>
-                        <div class="letras-camiseta">
-                            <strong>Camiseta Adidas Juventus 2021-2022</strong><br>
-                        </div>
-                    </div>
-                    </a>
-                    <a href="#">
-                        <div class="contenedor-top">
-                            <div class="foto-camiseta">
-                                <img src="../img/Ligas/Europa/Premier/MUnited/2021-2022.jpg" alt="Camiseta Machester United 2021-2022" width="200" height="200"><br>
+                            <div class="foto-liga">
+                                <img src="../img/Ligas/Categorias/premier_logo.png" alt="Logo Premier League" width="200" height="200"><br>
                             </div>
-                            <div class="letras-camiseta">
-                                <strong>Camiseta Adidas Manchester United 2021-2022</strong><br>
+                            <div class="letras-liga">
+                                <strong>Premier League</strong><br>
                             </div>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="../vistes/equipos.html">
                         <div class="contenedor-top">
-                        <div class="foto-camiseta">
-                            <img src="../img/Ligas/Europa/Ligue1/PSG/2021-2022.jpg" alt="Camiseta PSG 2021-2022" width="200" height="200"><br>
-                        </div>
-                        <div class="letras-camiseta">
-                            <strong>Camiseta Nike PSG 2021-2022</strong><br>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-            </section>
-
-            <section id = "rebajas">
-                <div class="titulos">
-                    <h1>Rebajas</h1>
-                </div>
-                <div class="contenedor-links-camisetas">
-                    <a href="#">
-                        <div class="contenedor-top">
-                            <div class="foto-camiseta">
-                                <img src="../img/Ligas/Europa/LaLiga/RealMadrid/2020-2021.jpg" alt="Camiseta Real Madrid 2020-2021" width="200" height="200"><br>
+                            <div class="foto-liga">
+                                <img src="../img/Ligas/Categorias/bundesliga_logo.png" alt="Logo Bundesliga" width="200" height="200"><br>
                             </div>
-                            <div class="letras-camiseta">
-                                <strong>Camiseta Adidas Real Madrid 2020-2021</strong><br>
+                            <div class="letras-liga">
+                                <strong>Bundesliga</strong><br>
                             </div>
                         </div>
                     </a>
-                    <a href="#">
+                </div>
+                <div class="contenedor-links-categorias">
+                    <a href="../vistes/equipos.html">
                         <div class="contenedor-top">
-                            <div class="foto-camiseta">
-                                <img src="../img/Ligas/Europa/Premier/Liverpool/2020-2021.jpg" alt="Camiseta Liverpool 2020-2021" width="200" height="200"><br>
+                            <div class="foto-liga">
+                                <img src="../img/Ligas/Categorias/ligue1_logo.png" alt="Logo Ligue 1" width="200" height="200"><br>
                             </div>
-                            <div class="letras-camiseta">
-                                <strong>Camiseta New Balance Liverpool 2020-2021</strong><br>
+                            <div class="letras-liga">
+                                <strong>Ligue 1</strong><br>
                             </div>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="../vistes/equipos.html">
                         <div class="contenedor-top">
-                            <div class="foto-camiseta">
-                                <img src="../img/Ligas/Norteamerica/MLS/LAGalaxy/2020-2021.jpg" alt="Camiseta LA Galaxy 2020-2021" width="200" height="200"><br>
+                            <div class="foto-liga">
+                                <img src="../img/Ligas/Categorias/serieA_logo.png" alt="Logo Serie A" width="200" height="200"><br>
                             </div>
-                            <div class="letras-camiseta">
-                                <strong>Camiseta Adidas LA Galaxy 2020-2021</strong><br>
+                            <div class="letras-liga">
+                                <strong>Serie A</strong><br>
                             </div>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="../vistes/equipos.html">
                         <div class="contenedor-top">
-                            <div class="foto-camiseta">
-                                <img src="../img/Ligas/Norteamerica/PrimeraMexico/America/2020-2021(Segunda).jpg" alt="Camiseta América Segunda Equipación 2020-2021" width="200" height="200"><br>
+                            <div class="foto-liga">
+                                <img src="../img/Ligas/Categorias/internacional_logo.png" alt="Logo Internacional" width="200" height="200"><br>
                             </div>
-                            <div class="letras-camiseta">
-                                <strong>Camiseta Adidas América Segunda Equipación 2020-2021</strong><br>
+                            <div class="letras-liga">
+                                <strong>Otras Ligas</strong><br>
                             </div>
                         </div>
                     </a>
