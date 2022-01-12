@@ -163,7 +163,7 @@ header div {
 }
 
 #menu-desplegable-ligas>ul>li>ul>li>a:hover {
-    background: #ffa365;
+    background: #171717;
     color: white;
 }
 
@@ -183,89 +183,57 @@ header div {
 
 /**------------------------------------------------------------------------------------**/
 
-
 main {
     display: flex;
     justify-content: center;
 }
 
-.contenidoPrincipalProducto {
-    display:flex;
-    margin-top:7rem;
-    padding-bottom: 7rem;
-}
-
-.datosProducto {
-    background-color:#FFF9F3;
-    font-style: normal;
-    border-radius: 2%;
-}
-
-.precioProducto{
-    display:flex;
-}
-.labelPrecio{
-    font-weight: 800;
-    font-size: 140%;
-    padding-right:20%;
-}
-
-.labelGratuitos{
-    color:#999;
-}
-
-.infoPedido{
-    padding-bottom: 4%;
-}
-
-.contenedorSelecionadores{
-    display:flex;
-}
-
-.etiquetaTallas{
-    padding-right: 2%;
-}
-.etiquetaUnidades{
-padding-right: 2%;
-}
-.selecionadorTallas{
-    padding-bottom: 4%;
-    padding-right: 20%;
-}
-
-.numeroUnidades{
-    width: 80%;
-}
-
-.letraTalla{
-     width:230%;
-}
-.selecionadorUnidades{
-    padding-bottom: 4%;
-}
-
-
-.inputComprar {
-    background-color:#FF8210;
-    font-size: 180%;
-    font-weight: 800;    
-    padding-top:10 rem;
-    border-radius: 1rem;
-
-}
-.botonComprar {
-    padding-top:100 px;
-    margin-top: 10 rem;
+.titulos {
+    background-color: black;
     text-align: center;
 }
 
-.divStock{
-text-align: center;
-padding-top:2%;
+.titulos h1 {
+    color: white;
+    padding: 1rem 0rem;
 }
 
-.labelStock{
-    color:#999;
+main section {
+    width: 70%;
+}
+
+.contenedor-links-categorias {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+
+.contenedor-top {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 0.2rem solid white;
+    border-radius: 1rem;
+    background-color: white;
+    padding: 2rem 0;
+    height: 25rem;
+    width: 25rem;
+}
+
+.contenedor-top:hover {
+    box-shadow: 0rem 0rem 2rem 0.5rem #999999;
+    transform: scale(1.05);
+}
+
+.foto-camiseta img {
+    border-radius: 1rem;
+    border: 0.2rem solid white;
+}
+
+.letras-camiseta {
+    margin: 1rem 1rem 0rem 1rem;
+    color: black;
 }
 
 footer {
@@ -288,9 +256,9 @@ footer {
 
 }
 .contenedor-redessociales{
-    padding: 0rem 1rem 0rem 1rem; 
-    
-    
+    padding: 0rem 1rem 0rem 1rem;
+
+
 }
 
 .contenedor-redessociales:hover{
@@ -319,7 +287,7 @@ footer {
 #inputMail{
     border-radius: 1rem;
     outline: none;
-    color: dark;
+    color: black;
     border: 0.2rem solid #FF8210;
     width: 35rem;
     height: 2.3rem;
@@ -328,7 +296,7 @@ footer {
 #inputSuscribirse{
     border-radius: 1rem;
     outline: none;
-    color: dark;
+    color: black;
     border: 0.2rem solid #FF8210;
     height: 2.9rem;
     font-weight:800;
@@ -353,15 +321,4 @@ footer {
 #contenedor-newLetter-redesSociales{
     display:flex;
     justify-content:center;
-}
-
-.formularioPedido
-{
-
-width: 39rem;
-}
-
-.tituloProducto
-{
-text-align:center;
 }

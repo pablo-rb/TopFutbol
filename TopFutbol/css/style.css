@@ -22,6 +22,7 @@ header {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 header div {
@@ -38,17 +39,8 @@ header div {
 }
 
 .letras-header {
-    text-decoration: none;
-    color: white;
     font-style: normal;
     font-weight: 800;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.letras-header:hover {
-    color: #FF8210;
 }
 
 .separador-nav {
@@ -90,27 +82,55 @@ header div {
     padding: 0 30rem 0 30rem;
 }
 
-.iniciosesion {
-    margin: 0;
-}
+/**------------------------------------------------------------------------------------**/
+/**ACTUALIZACION DESPLEGABLE MENU INICIO DE SESION CON JQUERY**/
 
-#container-sesion {
+.inicio-sesion-carrito {
     display: flex;
-    margin: 0 2rem 0 2rem;
-    align-items: center;
+    margin-right: 0;
+    margin-left: 5rem;
+}
+/**
+#btn-usuario-not-logged {
+    display: initial;
+}
+**/
+
+#btn-usuario-logged {
+    display: initial;
 }
 
-.letras-sesion {
-    margin: 0 1rem 0 0;
-}
 
-.logo-sesion {
+#btn-usuario ul {
+    list-style: none;
     margin: 0;
+    padding: 0;
 }
 
-.logo-sesion:hover {
-    background: #FF8210;
-    border-radius: 1rem;
+#btn-usuario a {
+    display: block;
+    color: white;
+    width: 10rem;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+}
+
+#icono-usuario:hover {
+    background-color: grey;
+}
+
+#toggle-post-ini {
+    position: absolute;
+    display: none;
+}
+
+#toggle-post-ini a {
+    background-color: #FF8210;
+}
+
+#toggle-post-ini a:hover {
+    background-color: #ffa365;
 }
 
 #carrito {
@@ -122,39 +142,46 @@ header div {
     border-radius: 1rem;
 }
 
-.inicio-sesion-carrito {
-    display: flex;
-    margin-right: 0;
-    margin-left: 50;
-}
+/**------------------------------------------------------------------------------------**/
+/**MENU DESPLEGABLE LIGAS CON JQUERY**/
 
-#desplegableLigas {
-    margin: 0;
-}
-
-#desplegableLigas nav {
-    display: inline;
-}
-
-#navegadorLigas ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    list-style: none;
-}
-
-#navegadorLigas ul li {
-    padding: 1rem 2rem;
+#menu-desplegable-ligas a {
+    display: block;
+    width: 15rem;
+    height: 5rem;
     text-align: center;
+    line-height: 5rem;
+    background-color: black;
 }
 
-.seleccion-liga a:hover {
+#menu-desplegable-ligas a:hover {
+    background-color: #FF8210;
+}
+
+#menu-desplegable-ligas>ul>li>ul>li {
+    position: relative;
+}
+
+#menu-desplegable-ligas>ul>li>ul>li>a:hover {
+    background: #171717;
     color: white;
 }
 
-.seleccion-liga:hover {
-    background-color: #FF8210;
+#menu-desplegable-ligas ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
 }
+
+#menu-desplegable-ligas>ul>li>ul {
+    display: none;
+}
+
+#contenedores-ligas {
+    display: flex;
+}
+
+/**------------------------------------------------------------------------------------**/
 
 main {
     display: flex;
@@ -169,6 +196,15 @@ main {
 .titulos h1 {
     color: white;
     padding: 1rem 0rem;
+}
+
+
+
+
+.contenedor-links-categorias {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
 }
 
 .contenedor-links-camisetas {
@@ -192,6 +228,17 @@ main {
 .contenedor-top:hover {
     box-shadow: 0rem 0rem 2rem 0.5rem #999999;
     transform: scale(1.05);
+    cursor: pointer;
+}
+
+.foto-liga img {
+    border-radius: 1rem;
+    border: 0.2rem solid white;
+}
+
+.letras-liga {
+    margin: 1rem 1rem 0rem 1rem;
+    color: black;
 }
 
 .foto-camiseta img {
@@ -212,10 +259,81 @@ footer {
     text-align: center;
 }
 
-.newletter {
-    padding: 3rem 0rem;
+#redesSociales{
+    display:flex;
+    justify-content: center;
+
 }
 
+.labelRedSocial{
+    text-decoration: none;
+    color: white
 
+}
+.contenedor-redessociales{
+    padding: 0rem 1rem 0rem 1rem; 
+    
+    
+}
 
+.contenedor-redessociales:hover{
+    transform: scale(1.05);
+    cursor:pointer;
 
+}
+
+#extrasFooter{
+    display:flex;
+    justify-content: center;
+}
+
+.contenedor-extras{
+    padding: 0rem 2rem 2rem 2rem;
+}
+
+.newletter {
+    padding: 3rem 0rem 2rem 0rem;
+}
+
+.redes {
+    padding: 3rem 0rem 2rem 10rem;
+}
+
+#inputMail{
+    border-radius: 1rem;
+    outline: none;
+    color: black;
+    border: 0.2rem solid #FF8210;
+    width: 35rem;
+    height: 2.3rem;
+}
+
+#inputSuscribirse{
+    border-radius: 1rem;
+    outline: none;
+    color: black;
+    border: 0.2rem solid #FF8210;
+    height: 2.9rem;
+    font-weight:800;
+
+}
+
+#inputSuscribirse:hover{
+    color: white;
+    background-color:#FF8210;
+    cursor:pointer;
+}
+
+.letras-extras:hover{
+    color:#FF8210;
+    cursor:pointer;
+}
+
+#contenedorMail{
+    display:flex;
+    justify-content:center;
+}
+#contenedor-newLetter-redesSociales{
+    display:flex;
+    justify-content:center;
+}

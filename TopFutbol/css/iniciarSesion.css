@@ -43,13 +43,29 @@ legend img {
 .campo {
     width: 100%;
     padding: 1rem 0.5rem;
-    margin: 0 0 3rem 0;
+    margin: 0 0 0rem 0;
     box-sizing: border-box;
     border: 0.1rem solid #FF8210;
     background-color: white;
     outline: none;
 }
 
+
+.error{
+ color:red;
+ text-align: left;
+ margin: 0.5rem 0 2.5rem 0
+ 
+}
+
+#contraseñaErronea
+{
+visibility:hidden;
+}
+#emailErroneo
+{
+visibility:hidden;
+}
 input[type=submit] {
     background-color: white;
     border: 0.1rem solid #FF8210;
