@@ -8,7 +8,7 @@
     <meta name="author" content="Pablo & Albert">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="../css/styleProducto.css">
-    <script type="text/javascript" src="../vistes/menusDesplegables.js"></script>
+    <script type="text/javascript" src="../js/menusDesplegables.js"></script>
     <title>TopFutbol Producto</title>
 </head>
 <body>

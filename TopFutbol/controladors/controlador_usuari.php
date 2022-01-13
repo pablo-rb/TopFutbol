@@ -17,10 +17,6 @@
     {
         include_once __DIR__ . "/../vistes/iniciarSesion.html";
     }
-    
-    
-    
-
-        ?>
+    ?>
         
         
