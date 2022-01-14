@@ -133,56 +133,13 @@ header div {
     background-color: #ffa365;
 }
 
-/**------------------------------------------------------------------------------------**/
-/**ACTUALIZACION CARRITO**/
 #carrito {
-    display: initial;
-}
-
-
-#btn-carrito ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#btn-carrito a {
-    display: block;
-    color: white;
-    width: 10rem;
-    height: 5rem;
-    text-align: center;
-    line-height: 5rem;
-}
-
-
-
-#toggle-post-ini-carro {
-    position: absolute;
-    display: none;
-}
-
-#toggle-post-ini-carro a {
-    background-color: #FF8210;
-}
-
-/**
-#toggle-post-ini-carro a:hover {
-    background-color: #ffa365;
-}
-**/
-#carro-tramitar:hover, #carro-vaciar:hover{
-background-color: #ffa365;
-}
-
-/**------------------------------------------------------------------------------------**/
-
-#carrito {
+    visibility:hidden;
     margin: 0 0 0 1.5rem;
 }
 
 #carrito:hover {
-    
+    background: #FF8210;
     border-radius: 1rem;
 }
 
@@ -207,7 +164,7 @@ background-color: #ffa365;
 }
 
 #menu-desplegable-ligas>ul>li>ul>li>a:hover {
-    background: #171717;
+    background: #ffa365;
     color: white;
 }
 
@@ -227,72 +184,96 @@ background-color: #ffa365;
 
 /**------------------------------------------------------------------------------------**/
 
+
 main {
     display: flex;
     justify-content: center;
 }
 
-.titulos {
-    background-color: black;
+#fieldProducto
+{
+border-style:hidden;
+border-bottom-style:solid;
+
+}
+.contenidoPrincipalProducto {
+    display:flex;
+    margin-top:3rem;
+    padding-bottom: 3rem;
+    width: 90rem;
+}
+
+.datosProducto {
+    background-color:#FFF9F3;
+    font-style: normal;
+    border-radius: 2%;
+}
+
+.precioProducto{
+    display:flex;
+}
+.labelPrecio{
+    font-weight: 800;
+    font-size: 140%;
+    padding-right:20%;
+}
+
+.labelGratuitos{
+    color:#999;
+}
+
+.infoPedido{
+    padding-bottom: 4%;
+}
+
+.contenedorSelecionadores{
+    display:flex;
+}
+
+.etiquetaTallas{
+    padding-right: 2%;
+}
+.etiquetaUnidades{
+padding-right: 2%;
+}
+.selecionadorTallas{
+    padding-bottom: 4%;
+    padding-right: 20%;
+}
+
+.numeroUnidades{
+    width: 80%;
+}
+
+.letraTalla{
+     width:230%;
+}
+.selecionadorUnidades{
+    padding-bottom: 4%;
+}
+
+
+.inputComprar {
+    background-color:#FF8210;
+    font-size: 180%;
+    font-weight: 800;    
+    padding-top:10 rem;
+    border-radius: 1rem;
+
+}
+.botonComprar {
+    padding-top:100 px;
+    margin-top: 10 rem;
     text-align: center;
 }
 
-.titulos h1 {
-    color: white;
-    padding: 1rem 0rem;
+.divStock{
+text-align: center;
+padding-top:2%;
 }
 
-
-
-
-.contenedor-links-categorias {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5rem;
-}
-
-.contenedor-links-camisetas {
-    display: flex;
-    justify-content: space-between;
-}
-
-.contenedor-top {
-    align-content: center;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    border: 0.2rem solid white;
-    border-radius: 1rem;
-    background-color: white;
-    padding: 2rem 0;
-    height: 25rem;
-    width: 25rem;
-}
-
-.contenedor-top:hover {
-    box-shadow: 0rem 0rem 2rem 0.5rem #999999;
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
-.foto-liga img {
-    border-radius: 1rem;
-    border: 0.2rem solid white;
-}
-
-.letras-liga {
-    margin: 1rem 1rem 0rem 1rem;
-    color: black;
-}
-
-.foto-camiseta img {
-    border-radius: 1rem;
-    border: 0.2rem solid white;
-}
-
-.letras-camiseta {
-    margin: 1rem 1rem 0rem 1rem;
-    color: black;
+.labelStock{
+    color:#999;
 }
 
 footer {
@@ -346,7 +327,7 @@ footer {
 #inputMail{
     border-radius: 1rem;
     outline: none;
-    color: black;
+    color: dark;
     border: 0.2rem solid #FF8210;
     width: 35rem;
     height: 2.3rem;
@@ -355,7 +336,7 @@ footer {
 #inputSuscribirse{
     border-radius: 1rem;
     outline: none;
-    color: black;
+    color: dark;
     border: 0.2rem solid #FF8210;
     height: 2.9rem;
     font-weight:800;
@@ -380,4 +361,41 @@ footer {
 #contenedor-newLetter-redesSociales{
     display:flex;
     justify-content:center;
+}
+
+.contenedorDatosProducto
+{
+
+width: 39rem;
+padding-left: 4rem;
+}
+
+#precioUnidades
+{
+padding-left: 0.2rem;
+}
+
+.tituloProducto
+{
+
+}
+
+#precioTotal
+{
+    position: relative;
+    left: 134rem;
+    top: 1rem;
+}
+
+#buttonFinalitzar
+{
+   
+    position: relative;
+    left: 127rem;
+    top: 1.8rem;
+    background-color:#FF8210;
+    font-size: 110%;
+    font-weight: 600;    
+    
+    border-radius: 1rem;
 }

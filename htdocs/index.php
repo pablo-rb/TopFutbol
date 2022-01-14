@@ -2,6 +2,14 @@
 
 <?php
 
+    if(!isset($_SESSION['numCarrito']))
+    {
+    session_start();
+    //echo "<pre>";
+    //var_dump($_SESSION);
+    //echo "</pre>";
+    //$_SESSION['numCarrito'] = 0;
+    }
     error_reporting(0);
 
     $accion = $_GET['accion'];

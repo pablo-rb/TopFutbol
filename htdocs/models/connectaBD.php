@@ -3,7 +3,7 @@
 
  function connectaBD(){
      $servidor = "localhost";
-     $usuari = "pablo";
+     $usuari = "saulo";
      $clau = "topfut123";
      try{
          $connexio = new PDO("mysql:host=$servidor;dbname=topfutbol;charset=UTF8", $usuari, $clau);

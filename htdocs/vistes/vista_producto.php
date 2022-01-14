@@ -22,11 +22,12 @@
                 <img src=<?php echo ($result['foto'])?> alt=<?php echo ($result['descripcion'])?> width="500" height="500"><br>
             </div>
             <div class="formularioPedido">
-                <form>
+            
+            <form onsubmit="anadirCesta(<?php echo ($result['idProducto'])?>, document.getElementById('inputUnidades').value, <?php echo ($result['precio'])?>);"> 
                     <h2 class="tituloProducto"><?php echo ($result['descripcion'])?></h2>
                     <fieldset class="datosProducto">
                         <div class="precioProducto">
-                            <label class="labelPrecio"><?php echo ($result['precio'])?></label>
+                            <label class="labelPrecio"><?php echo ($result['precio'])?>,00€</label>
                         </div>
                         <div class="infoPedido">
                             <label class="labelGratuitos">Envíos gratuitos</label>
@@ -42,20 +43,23 @@
                                     <option value="XL">XL</option>
                                 </select>
                             </div>
-                            <label class="etiquetaUnidades"><strong>Unidades:</strong></label>
+                            <label for 'unidades' class="etiquetaUnidades"><strong>Unidades:</strong></label>
                             <div class="selecionadorUnidades">
-                                <input type="number" value="1" min="1" max="10" class="numeroUnidades">
+                                <input type="number" value="1" min="1" max="10" name="unidades" class="numeroUnidades" id="inputUnidades">
+                               
                             </div>
                         </div>
-                        <div class="botonComprar">
-                            <input type="submit" value="Añadir a la cesta" class="inputComprar">
+                        <div class="botonComprar"> <!-- onclick="anadirCesta(<?php echo ($result['idProducto'])?> );" -->
+                           <input type="submit" value="Añadir a la cesta" class="inputComprar" >
+                           <!--<label class="inputComprar">Añadir a la cesta</label>-->
                         </div>
                         <div class="divStock">
                             <img src="../img/ico/okey_verde.ico" alt="Icono okey" height="10" width="15">
                             <label class="labelStock">En Stock. Envío inmediato</label>
                         </div>
                     </fieldset>
-                </form>
+                </form> 
+                
             </div>
                         
         </div>
