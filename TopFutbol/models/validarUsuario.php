@@ -3,8 +3,8 @@
     function validaUsuario($connexio)
     {
 
-        $email = $_REQUEST['email'];
-        $contrasena =  $_REQUEST['contraseña'];
+        $email = $_POST['email'];
+        $contrasena =  $_POST['contraseña'];
 
 
         $sql = "SELECT email, contraseña FROM usuarios WHERE email=:email";  // AND contraseña=:contrasena";

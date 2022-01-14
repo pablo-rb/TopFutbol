@@ -3,7 +3,7 @@
         <div id="superior-menu" class="separador-nav">
 
             <div id="logo-principal">
-                <a href="#">
+                <a href="?accion=inicio">
                     <img src="../img/TopFutbol_Logo.png" alt="Logo TopFutbol" width="150" />
                 </a>
             </div>
@@ -27,7 +27,10 @@
                                     </svg>
                                 </a>
                                 <ul id="toggle-post-ini">
+                                    <!--
                                     <li><span id="iniciar-sesion"><a href="<?php echo $accionConsulta[1]['href'] ?>"><strong>Iniciar Sesión</strong></a></li></span>
+                                    -->
+                                    <li><span id="iniciar-sesion"><a href="?accion=inicio_sesion"><strong>Iniciar Sesión</strong></a></li></span>
                                 </ul>
                             </li>
                         </ul>

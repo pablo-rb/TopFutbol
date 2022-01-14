@@ -6,6 +6,6 @@
     for ($id = 1; $id <= 6; $id++) 
     {
         $result = detallesLiga($connexio, $id);
-        include __DIR__ . "/../vistes/ligasResumen.php";
+        include __DIR__ . "/../vistes/vista_ligasResumen.php";
     }
 ?>

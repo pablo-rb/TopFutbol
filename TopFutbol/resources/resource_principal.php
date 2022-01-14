@@ -46,7 +46,7 @@
                 <h1>Top Ventas</h1>
             </div>
             <div class="contenedor-links-camisetas">
-                <?php  include_once __DIR__ . "/../controladors/controlador_listadoProductosTopVentas.php"; ?>
+                <?php  include __DIR__ . "/../controladors/controlador_listadoProductosTopVentas.php"; ?>
             </div>
         </section>
 
@@ -55,16 +55,10 @@
                 <h1>Rebajas</h1>
             </div>
             <div class="contenedor-links-camisetas">
-                <?php  include_once __DIR__ . "/../controladors/controlador_listadoProductosRebajas.php"; ?>
+                <?php  include __DIR__ . "/../controladors/controlador_listadoProductosRebajas.php"; ?>
             </div>
         </section>
 
-    </div>
-    <div>
-        <h1>
-            <?php echo "HOLA"?>
-            <?php echo $accionConsulta ?>
-        </h1>
     </div>
 
 </main>

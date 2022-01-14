@@ -6,10 +6,9 @@
     for ($id = 6; $id <= 9; $id++) 
     {
         $result = detallesProducto($connexio, $id);
-        include __DIR__ . "/../vistes/productoResumen.php";
+        include __DIR__ . "/../vistes/vista_productoResumen.php";
 
     }
-    //include_once __DIR__ . "/../vistes/topVentas.php";
 
   
 ?>

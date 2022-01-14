@@ -10,6 +10,9 @@
         case 'camiseta':
             include __DIR__.'/resources/resource_camiseta.php';
             break;
+        case 'liga':
+            include __DIR__.'/resources/resource_liga.php';
+            break;
         case 'inicio_sesion':
             include __DIR__.'/resources/resource_inicio_sesion.php';
             break;
