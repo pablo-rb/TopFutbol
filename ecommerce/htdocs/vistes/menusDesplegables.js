@@ -20,3 +20,14 @@ $(document).ready(function() {
         $(this).children('ul').slideUp();
     });
 });
+
+$(document).ready(function() {
+    $btnCarrito = $('#btn-carrito').find('ul').find('li');
+    $btnCarrito.hover(function() {
+        $(this).children('ul').stop();
+        $(this).children('ul').slideDown();
+    }, function() {
+        $(this).children('ul').stop();
+        $(this).children('ul').slideUp();
+    });
+});

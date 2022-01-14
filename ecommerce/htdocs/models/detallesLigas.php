@@ -11,13 +11,6 @@
         
         $result = $consulta1->fetch();
     
-        return $result; 
-    
-    
-    
-    
-    
+        return $result;
     }
-
-
 ?>

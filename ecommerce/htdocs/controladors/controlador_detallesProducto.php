@@ -6,8 +6,4 @@
     $id = $_POST['id'];
     $result = detallesProducto($connexio, $id);
     include __DIR__ . "/../vistes/producto.php";
-
-
-
-  
 ?>

@@ -7,7 +7,7 @@ function validaUsuario($connexio)
     $contrasena =  $_REQUEST['contraseña'];
 
 
-    $sql = "SELECT email, contraseña FROM usuarios WHERE email=:email";  // AND contraseña=:contrasena";
+    $sql = "SELECT email, contraseña, idUsuario FROM usuarios WHERE email=:email";  // AND contraseña=:contrasena";
 
     $my_Insert_Statement = $connexio->prepare($sql);
 
@@ -23,6 +23,7 @@ function validaUsuario($connexio)
         if (password_verify($contrasena, $row['contraseña']))
         {
             //echo 'Sesion iniciada';
+            
             return 0;
         }
         else{

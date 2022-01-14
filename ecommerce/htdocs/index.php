@@ -7,11 +7,20 @@
     <meta name="description" content="Venta de camisetas de futbol autenticas y baratas">
     <meta name="author" content="Pablo & Albert">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="vistes/menusDesplegables.js"></script>
-    <script type="text/javascript" src="js/funcions.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="/vistes/menusDesplegables.js"></script>
+    <script type="text/javascript" src="/js/funcions.js"></script>
     <title>TopFutbol</title>
 </head>
+<?php
+
+if(!isset($_SESSION['numCarrito']))
+{
+session_start();
+
+}
+
+?>
 <body>
     <header id="topheader">
         <div class="contenedor-items-header">
@@ -71,10 +80,10 @@
                         </nav>
                     </div>
 
-                    <div id="carrito">
+                    <!-- <div id="carrito">
                         <a href="#">
 
-                            <!--<img src="../img/ico/shopping-cart.ico" alt="Carrito De Compra" height="30" width="30">-->
+                            
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                 <circle cx="6" cy="19" r="2" />
@@ -82,8 +91,41 @@
                                 <path d="M17 17h-11v-14h-2" />
                                 <path d="M6 5l14 1l-1 7h-13" />
                             </svg>
+                            <label id="numCarrito"><?php echo($_SESSION['numCarrito'])?> </label>
                         </a>
+                    </div>-->
+                    
+                    <div id="carrito">
+                        <nav id="btn-carrito">
+                            <ul>
+                                <li>
+                                    <a href="#">
+            
+                                        <!--<img src="../img/ico/shopping-cart.ico" alt="Carrito De Compra" height="30" width="30">-->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <circle cx="6" cy="19" r="2" />
+                                            <circle cx="17" cy="19" r="2" />
+                                            <path d="M17 17h-11v-14h-2" />
+                                            <path d="M6 5l14 1l-1 7h-13" />
+                                        </svg>
+                                        <label id="numCarrito"><?php echo($_SESSION['numCarrito'])?> </label>
+                                    </a>
+                                    <ul id="toggle-post-ini-carro">
+                                        <li><span id="carro-productos"><a href="#"><strong>Productos: <?php echo($_SESSION['numCarrito'])?></strong></a></span></li>
+                                        <li><span id="carro-precio"><a href="#"><strong>Precio: <?php echo($_SESSION['precio'])?>€</strong></a></span></li>
+                                        <li><span ><a href="#" id="carro-tramitar" onclick="tramitarCarro()"><strong>TRAMITAR</strong></a></span></li>
+                                        <li><span ><a href="#" id="carro-vaciar" onclick="anadirCesta('1','0','0','0')"><strong>Vaciar</strong></a></span></li> 
+                                        <!-- <form onsubmit="anadirCesta('1','0','0')">
+                                            <li><span ><input type="submit" value="Vaciar" id="carro-vaciar"></span></li>
+                                        </form> -->
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
+                    
+                    
                 </div>
             </div>
             <div id="navegador-ligas" class="separador-nav">
