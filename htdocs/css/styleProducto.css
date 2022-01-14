@@ -1,0 +1,367 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    font-family: Calibri;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header div {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.contenedor-items-header {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: auto;
+}
+
+.letras-header {
+    font-style: normal;
+    font-weight: 800;
+}
+
+.separador-nav {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#superior-menu {
+    height: 10rem;
+    width: auto;
+}
+
+#navegadorLigas {
+    margin: 0;
+    padding: 0;
+    height: 3rem;
+}
+
+#logo-principal {
+    margin: 0;
+    padding: 0;
+}
+
+#barrabusqueda {
+    padding: 0.5rem 10rem 0.5rem 10rem;
+}
+
+#buscador input.search {
+    border-radius: 1rem;
+    outline: none;
+    color: darkgrey;
+    border: 0.2rem solid #FF8210;
+}
+
+#buscador {
+    margin: auto;
+    padding: 0 30rem 0 30rem;
+}
+
+/**------------------------------------------------------------------------------------**/
+/**ACTUALIZACION DESPLEGABLE MENU INICIO DE SESION CON JQUERY**/
+
+.inicio-sesion-carrito {
+    display: flex;
+    margin-right: 0;
+    margin-left: 5rem;
+}
+/**
+#btn-usuario-not-logged {
+    display: initial;
+}
+**/
+
+#btn-usuario-logged {
+    display: initial;
+}
+
+
+#btn-usuario ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#btn-usuario a {
+    display: block;
+    color: white;
+    width: 10rem;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+}
+
+#icono-usuario:hover {
+    background-color: grey;
+}
+
+#toggle-post-ini {
+    position: absolute;
+    display: none;
+}
+
+#toggle-post-ini a {
+    background-color: #FF8210;
+}
+
+#toggle-post-ini a:hover {
+    background-color: #ffa365;
+}
+
+#carrito {
+    margin: 0 0 0 1.5rem;
+}
+
+#carrito:hover {
+    background: #FF8210;
+    border-radius: 1rem;
+}
+
+/**------------------------------------------------------------------------------------**/
+/**MENU DESPLEGABLE LIGAS CON JQUERY**/
+
+#menu-desplegable-ligas a {
+    display: block;
+    width: 15rem;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+    background-color: black;
+}
+
+#menu-desplegable-ligas a:hover {
+    background-color: #FF8210;
+}
+
+#menu-desplegable-ligas>ul>li>ul>li {
+    position: relative;
+}
+
+#menu-desplegable-ligas>ul>li>ul>li>a:hover {
+    background: #ffa365;
+    color: white;
+}
+
+#menu-desplegable-ligas ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+#menu-desplegable-ligas>ul>li>ul {
+    display: none;
+}
+
+#contenedores-ligas {
+    display: flex;
+}
+
+/**------------------------------------------------------------------------------------**/
+
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.contenidoPrincipalProducto {
+    display:flex;
+    margin-top:7rem;
+    padding-bottom: 7rem;
+}
+
+.datosProducto {
+    background-color:#FFF9F3;
+    font-style: normal;
+    border-radius: 2%;
+}
+
+.precioProducto{
+    display:flex;
+}
+.labelPrecio{
+    font-weight: 800;
+    font-size: 140%;
+    padding-right:20%;
+}
+
+.labelGratuitos{
+    color:#999;
+}
+
+.infoPedido{
+    padding-bottom: 4%;
+}
+
+.contenedorSelecionadores{
+    display:flex;
+}
+
+.etiquetaTallas{
+    padding-right: 2%;
+}
+.etiquetaUnidades{
+padding-right: 2%;
+}
+.selecionadorTallas{
+    padding-bottom: 4%;
+    padding-right: 20%;
+}
+
+.numeroUnidades{
+    width: 80%;
+}
+
+.letraTalla{
+     width:230%;
+}
+.selecionadorUnidades{
+    padding-bottom: 4%;
+}
+
+
+.inputComprar {
+    background-color:#FF8210;
+    font-size: 180%;
+    font-weight: 800;    
+    padding-top:10 rem;
+    border-radius: 1rem;
+
+}
+.botonComprar {
+    padding-top:100 px;
+    margin-top: 10 rem;
+    text-align: center;
+}
+
+.divStock{
+text-align: center;
+padding-top:2%;
+}
+
+.labelStock{
+    color:#999;
+}
+
+footer {
+    display: block;
+    background-color: black;
+    color: white;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+#redesSociales{
+    display:flex;
+    justify-content: center;
+
+}
+
+.labelRedSocial{
+    text-decoration: none;
+    color: white
+
+}
+.contenedor-redessociales{
+    padding: 0rem 1rem 0rem 1rem; 
+    
+    
+}
+
+.contenedor-redessociales:hover{
+    transform: scale(1.05);
+    cursor:pointer;
+
+}
+
+#extrasFooter{
+    display:flex;
+    justify-content: center;
+}
+
+.contenedor-extras{
+    padding: 0rem 2rem 2rem 2rem;
+}
+
+.newletter {
+    padding: 3rem 0rem 2rem 0rem;
+}
+
+.redes {
+    padding: 3rem 0rem 2rem 10rem;
+}
+
+#inputMail{
+    border-radius: 1rem;
+    outline: none;
+    color: dark;
+    border: 0.2rem solid #FF8210;
+    width: 35rem;
+    height: 2.3rem;
+}
+
+#inputSuscribirse{
+    border-radius: 1rem;
+    outline: none;
+    color: dark;
+    border: 0.2rem solid #FF8210;
+    height: 2.9rem;
+    font-weight:800;
+
+}
+
+#inputSuscribirse:hover{
+    color: white;
+    background-color:#FF8210;
+    cursor:pointer;
+}
+
+.letras-extras:hover{
+    color:#FF8210;
+    cursor:pointer;
+}
+
+#contenedorMail{
+    display:flex;
+    justify-content:center;
+}
+#contenedor-newLetter-redesSociales{
+    display:flex;
+    justify-content:center;
+}
+
+.formularioPedido
+{
+
+width: 39rem;
+}
+
+.tituloProducto
+{
+text-align:center;
+}
