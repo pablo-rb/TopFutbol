@@ -7,12 +7,19 @@
     <meta name="description" content="Venta de camisetas de futbol autenticas y baratas">
     <meta name="author" content="Pablo & Albert">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="../css/styleTramitar.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" src="/js/menusDesplegables.js"></script>
     <script type="text/javascript" src="/js/funcions.js"></script>
-    <script type="text/javascript" src="/js/desplegableUsuario.js"></script>
-    <script type="text/javascript" src="../js/menusDesplegables.js"></script>    
-    <title>TopFutbol Cesta</title>
+    <title>TopFutbol Producto</title>
 </head>
-
 <body>
-    <header id="topheader">
+<header>
+    <?php include __DIR__ . "/../vistes/vista_header.php"; ?>
+</header>
+
+<main>
+    <section id="categoriasMain">
+        <div class="titulos">
+            <h1><?php echo ($liga)?></h1>
+        </div>
+        <div class="contenedor-links-categorias">

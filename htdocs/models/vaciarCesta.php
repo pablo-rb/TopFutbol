@@ -1,9 +1,6 @@
 <?php
 function vaciarCesta($connexio)
 {
-
-    
-    
     $idPedido = 1;
     
     $sql1 = "DELETE FROM listapedidos WHERE idPedido=:idPedido";
@@ -15,15 +12,8 @@ function vaciarCesta($connexio)
     $consulta->bindParam("idPedido", $idPedido,PDO::PARAM_STR);
     $consulta->execute();
 
-    
-    
-    
-
-    
 
      return 0;
-
-
 }
 
 ?>

@@ -1,6 +1,6 @@
 
 
-<a href="?accion=liga">
+<a href="?accion=<?php echo ($result['nombre'])?>">
     <?php if ($id == 1 || $id == 4) {?> <div class="contenedor-links-categorias"> <?php } ?>
     <div class="contenedor-top">
         <div class="foto-liga">

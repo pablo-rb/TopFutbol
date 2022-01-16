@@ -1,4 +1,10 @@
-
+<?php
+    if(!isset($_SESSION['numCarrito']))
+    {
+        //$_SESSION['numCarrito'] = 0;
+        session_start();
+    }
+?>
     <div class="contenedor-items-header">
         <div id="superior-menu" class="separador-nav">
 
@@ -78,8 +84,8 @@
                                     <ul id="toggle-post-ini-carro">
                                         <li><span id="carro-productos"><a href="#"><strong>Productos: <?php echo($_SESSION['numCarrito'])?></strong></a></span></li>
                                         <li><span id="carro-precio"><a href="#"><strong>Precio: <?php echo($_SESSION['precio'])?>€</strong></a></span></li>
-                                        <li><span ><a href="#" id="carro-tramitar" onclick="tramitarCarro()"><strong>TRAMITAR</strong></a></span></li>
-                                        <li><span ><a href="#" id="carro-vaciar" onclick="anadirCesta('1','0','0','0')"><strong>Vaciar</strong></a></span></li> 
+                                        <li><span ><a href="#" id="carro-tramitar" onclick="tramitarCarro(<?php echo($_SESSION['numCarrito'])?>)"><strong>TRAMITAR</strong></a></span></li>
+                                        <li><span ><a href="#" id="carro-vaciar" onclick="anadirCesta('1','0','0') ; location.reload();"><strong>Vaciar</strong></a></span></li>
                                         <!-- <form onsubmit="anadirCesta('1','0','0')">
                                             <li><span ><input type="submit" value="Vaciar" id="carro-vaciar"></span></li>
                                         </form> -->
@@ -87,64 +93,68 @@
                                 </li>
                             </ul>
                         </nav>
+                        <fieldset id="cestaVacia">
+                            <p id="labelCestaVacia"> No tienes ningún producto </br>en tu cesta en estos momentos</p>
+                        </fieldset>
                     </div>
+                    
             </div>
         </div>
+        
         <div id="navegador-ligas" class="separador-nav">
             <nav id="menu-desplegable-ligas">
                 <ul id="contenedores-ligas">
                     <li>
                         <a href="#" class="letras-header">LaLiga</a>
                         <ul>
-                            <li><a href="../vistes/producto.html">FC Barcelona</a></li>
-                            <li><a href="../vistes/producto.html">Real Madrid</a></li>
-                            <li><a href="../vistes/producto.html">Atlético de Madrid</a></li>
-                            <li><a href="../vistes/producto.html">Sevilla</a></li>
-                            <li><a href="../vistes/producto.html">Valencia</a></li>
-                            <li><a href="../vistes/producto.html">Athletic Bilbao</a></li>
+                            <li><a onclick="infoProducto(<?php echo (1)?>);">FC Barcelona</a></li>
+                            <li><a onclick="infoProducto(<?php echo (5)?>);">Real Madrid</a></li>
+                            <li><a onclick="infoProducto(<?php echo (25)?>);">Atlético de Madrid</a></li>
+                            <li><a onclick="infoProducto(<?php echo (27)?>);">Sevilla</a></li>
+                            <li><a onclick="infoProducto(<?php echo (28)?>);">Valencia</a></li>
+                            <li><a onclick="infoProducto(<?php echo (26)?>);">Athletic Bilbao</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#" class="letras-header">Premier League</a>
                         <ul>
-                            <li><a href="../vistes/producto.html">Chelsea FC</a></li>
-                            <li><a href="../vistes/producto.html">Manchester United</a></li>
-                            <li><a href="../vistes/producto.html">Manchester City</a></li>
-                            <li><a href="../vistes/producto.html">Liverpool</a></li>
+                            <li><a onclick="infoProducto(<?php echo (16)?>);">Chelsea FC</a></li>
+                            <li><a onclick="infoProducto(<?php echo (3)?>);">Manchester United</a></li>
+                            <li><a onclick="infoProducto(<?php echo (7)?>);">Manchester City</a></li>
+                            <li><a onclick="infoProducto(<?php echo (6)?>);">Liverpool</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#" class="letras-header">Bundesliga</a>
                         <ul>
-                            <li><a href="../vistes/producto.html">Bayern de Múnich</a></li>
-                            <li><a href="../vistes/producto.html">Borussia Dortmund</a></li>
+                            <li><a onclick="infoProducto(<?php echo (12)?>);">Bayern de Múnich</a></li>
+                            <li><a onclick="infoProducto(<?php echo (8)?>);">Borussia Dortmund</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#" class="letras-header">Ligue1</a>
                         <ul>
-                            <li><a href="../vistes/producto.html">PSG</a></li>
-                            <li><a href="../vistes/producto.html">AS Mónaco</a></li>
-                            <li><a href="../vistes/producto.html">O. Lyon</a></li>
-                            <li><a href="../vistes/producto.html">O. Marsella</a></li>
+                            <li><a onclick="infoProducto(<?php echo (4)?>);">PSG</a></li>
+                            <li><a onclick="infoProducto(<?php echo (20)?>);">AS Mónaco</a></li>
+                            <li><a onclick="infoProducto(<?php echo (18)?>);">O. Lyon</a></li>
+                            <li><a onclick="infoProducto(<?php echo (19)?>);">O. Marsella</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#" class="letras-header">Serie A</a>
                         <ul>
-                            <li><a href="../vistes/producto.html">Juventus</a></li>
-                            <li><a href="../vistes/producto.html">Inter</a></li>
-                            <li><a href="../vistes/producto.html">AC Milán</a></li>
+                            <li><a onclick="infoProducto(<?php echo (2)?>);">Juventus</a></li>
+                            <li><a onclick="infoProducto(<?php echo (14)?>);">Inter</a></li>
+                            <li><a onclick="infoProducto(<?php echo (15)?>);">AC Milán</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#" class="letras-header">Otras</a>
                         <ul>
-                            <li><a href="../vistes/producto.html">River Plate</a></li>
-                            <li><a href="../vistes/producto.html">Ajax</a></li>
-                            <li><a href="../vistes/producto.html">Benfica</a></li>
-                            <li><a href="../vistes/producto.html">Shakhtar</a></li>
-                            <li><a href="../vistes/producto.html">Flamengo</a></li>
+                            <li><a onclick="infoProducto(<?php echo (11)?>);">River Plate</a></li>
+                            <li><a onclick="infoProducto(<?php echo (17)?>);">Ajax</a></li>
+                            <li><a onclick="infoProducto(<?php echo (10)?>);">América</a></li>
+                            <li><a onclick="infoProducto(<?php echo (9)?>);">LA Galaxy</a></li>
                         </ul>
                     </li>
                 </ul>

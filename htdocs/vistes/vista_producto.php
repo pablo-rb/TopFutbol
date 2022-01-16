@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <?php include __DIR__ . "/../vistes/vista_header.php"; ?>
+        <?php include __DIR__ . "/../vistes/vista_headerProducto.php"; ?>
     </header>
 
     <main>
@@ -58,10 +58,8 @@
                             <label class="labelStock">En Stock. Envío inmediato</label>
                         </div>
                     </fieldset>
-                </form> 
-                
+                </form>
             </div>
-                        
         </div>
     </main>
 

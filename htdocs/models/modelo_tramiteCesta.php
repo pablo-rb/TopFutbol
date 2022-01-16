@@ -15,7 +15,7 @@
     {
     
     
-    $sql = "SELECT descripcion, precio, foto 
+    $sql = "SELECT descripcion, precio, foto, idProducto 
             FROM producto 
             WHERE idProducto=:idProducto";
     $consulta = $connexio->prepare($sql);   
