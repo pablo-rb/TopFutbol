@@ -9,7 +9,11 @@
 
     if ($error == 0)
     {
-        include_once __DIR__ . "/../resources/resource_principal.php";
+        session_start();
+        $_SESSION['usuario'] = 1;
+        //include_once __DIR__ . "/../resources/resource_principal.php";
+        //header("/../resources/resource_principal.php");
+        header("Location: /../index.php"); /* Redirect browser */
     }
     else
     {

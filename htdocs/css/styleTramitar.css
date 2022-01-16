@@ -134,7 +134,7 @@ header div {
 }
 
 #carrito {
-    visibility:hidden;
+    visibility: visible;
     margin: 0 0 0 1.5rem;
 }
 
@@ -375,10 +375,7 @@ padding-left: 4rem;
 padding-left: 0.2rem;
 }
 
-.tituloProducto
-{
 
-}
 
 #precioTotal
 {
@@ -397,5 +394,45 @@ padding-left: 0.2rem;
     font-size: 110%;
     font-weight: 600;    
     
+    
     border-radius: 1rem;
+}
+#cestaVacia
+{
+    background-color:white;
+    text-align: center;    
+    position:fixed;
+    left:136.5rem;
+    visibility: hidden;
+
+}
+#precioFinalitza
+{
+    padding-bottom: 22rem;
+}
+
+
+#buttonVaciar
+{
+    position:relative;
+    left:51rem;
+    top:6rem;
+    font-size: 110%;
+    font-weight: 600;
+    
+    border-radius: 1rem;
+}
+
+.contenedorUnidades
+{
+    display:flex;
+    
+}
+
+.numeroUnidades
+{
+    width: 5rem;
+    
+    
+    
 }

@@ -133,66 +133,13 @@ header div {
     background-color: #ffa365;
 }
 
-/**------------------------------------------------------------------------------------**/
-/**ACTUALIZACION CARRITO**/
 #carrito {
-    display: initial;
-}
-
-
-#btn-carrito ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#btn-carrito a {
-    display: block;
-    color: white;
-    width: 10rem;
-    height: 5rem;
-    text-align: center;
-    line-height: 5rem;
-}
-
-
-#cestaVacia
-{
-    background-color:white;
-    text-align: center;    
-    position:fixed;
-    left:136.5rem;
-    visibility: hidden;
-    
-}
-
-
-#toggle-post-ini-carro {
-    position: absolute;
-    display: none;
-}
-
-#toggle-post-ini-carro a {
-    background-color: #FF8210;
-}
-
-/**
-#toggle-post-ini-carro a:hover {
-    background-color: #ffa365;
-}
-**/
-#carro-tramitar:hover, #carro-vaciar:hover{
- background-color: #ffa365;
-}
-
-/**------------------------------------------------------------------------------------**/
-
-#carrito {
+    visibility:hidden;
     margin: 0 0 0 1.5rem;
 }
 
 #carrito:hover {
-    
+    background: #FF8210;
     border-radius: 1rem;
 }
 
@@ -217,7 +164,7 @@ header div {
 }
 
 #menu-desplegable-ligas>ul>li>ul>li>a:hover {
-    background: #171717;
+    background: #ffa365;
     color: white;
 }
 
@@ -237,79 +184,28 @@ header div {
 
 /**------------------------------------------------------------------------------------**/
 
+
 main {
-    display: flex;
+    padding: 5rem 20rem 23rem 50rem;
     justify-content: center;
 }
 
-.titulos {
-    background-color: black;
-    text-align: center;
+#labelPedidoCorrecto
+{
+    font-size: large;
 }
 
-.titulos h1 {
-    color: white;
-    padding: 1rem 0rem;
+#fieldInfo
+{
+font-size:large;
+width:55rem;
 }
 
-
-
-.contenedor-links-categorias {
-    display: grid;
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* margin-top: 5rem; */
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
-    align-items: center;
+#labelInfoCorreo
+{
+    font-size:medium;
+    color:#FF8210;
 }
-
-.contenedor-links-camisetas {
-    display: flex;
-    justify-content: space-between;
-}
-
-.contenedor-top {
-    align-content: center;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    border: 0.2rem solid white;
-    border-radius: 1rem;
-    background-color: white;
-    padding: 2rem 0;
-    height: 25rem;
-    width: 25rem;
-    margin: 0rem 7rem;
-    margin-bottom: 3rem;
-}
-
-.contenedor-top:hover {
-    box-shadow: 0rem 0rem 2rem 0.5rem #999999;
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
-.foto-liga img {
-    border-radius: 1rem;
-    border: 0.2rem solid white;
-}
-
-.letras-liga {
-    margin: 1rem 1rem 0rem 1rem;
-    color: black;
-}
-
-.foto-camiseta img {
-    border-radius: 1rem;
-    border: 0.2rem solid white;
-}
-
-.letras-camiseta {
-    margin: 1rem 1rem 0rem 1rem;
-    color: black;
-}
-
 footer {
     display: block;
     background-color: black;
@@ -361,7 +257,7 @@ footer {
 #inputMail{
     border-radius: 1rem;
     outline: none;
-    color: black;
+    color: dark;
     border: 0.2rem solid #FF8210;
     width: 35rem;
     height: 2.3rem;
@@ -370,7 +266,7 @@ footer {
 #inputSuscribirse{
     border-radius: 1rem;
     outline: none;
-    color: black;
+    color: dark;
     border: 0.2rem solid #FF8210;
     height: 2.9rem;
     font-weight:800;
@@ -396,3 +292,30 @@ footer {
     display:flex;
     justify-content:center;
 }
+
+
+
+
+
+
+
+#precioTotal
+{
+    position: relative;
+    left: 134rem;
+    top: 1rem;
+}
+
+#buttonFinalitzar
+{
+   
+    position: relative;
+    left: 127rem;
+    top: 1.8rem;
+    background-color:#FF8210;
+    font-size: 110%;
+    font-weight: 600;    
+    
+    border-radius: 1rem;
+}
+

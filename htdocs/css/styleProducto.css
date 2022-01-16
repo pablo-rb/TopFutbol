@@ -137,10 +137,10 @@ header div {
     margin: 0 0 0 1.5rem;
 }
 
-#carrito:hover {
-    background: #FF8210;
-    border-radius: 1rem;
-}
+/*#carrito:hover {*/
+/*    background: #FF8210;*/
+/*    border-radius: 1rem;*/
+/*}*/
 
 /**------------------------------------------------------------------------------------**/
 /**MENU DESPLEGABLE LIGAS CON JQUERY**/
@@ -163,7 +163,7 @@ header div {
 }
 
 #menu-desplegable-ligas>ul>li>ul>li>a:hover {
-    background: #ffa365;
+    background: #171717;
     color: white;
 }
 
