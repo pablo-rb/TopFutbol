@@ -26,7 +26,7 @@
                         <input type ="email" id="inputEmail" placeholder="Dirección de email" class="campo" name="email" required>
                         <div class="error">
                             <label id="emailErroneo">Email no registrado</label>
-                        </label>
+                        </div>
                     </div>
 
                     <div id="contraseña">

@@ -20,8 +20,7 @@
 
             <div class="inicio-sesion-carrito">
 
-
-                <div id="btn-usuario-not-logged">
+                <div id="<?php if($_SESSION['user_id'] != 'none') {echo "btn-usuario-logged";} else{echo "btn-usuario-not-logged";} ?>">
                     <nav id="btn-usuario">
                         <ul>
                             <li>
@@ -32,40 +31,23 @@
                                         <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
                                     </svg>
                                 </a>
-                                <ul id="toggle-post-ini" class="sesion_no_iniciada">
-                                    <!--
-                                    <li><span id="iniciar-sesion"><a href="<?php echo $accionConsulta[1]['href'] ?>"><strong>Iniciar Sesión</strong></a></li></span>
-                                    -->
-                                    <li><span id="iniciar-sesion"><a href="?accion=inicio_sesion"><strong>Iniciar Sesión</strong></a></li></span>
-                                </ul>
+
+                                <?php
+                                    if($_SESSION['user_id'] != 'none')
+                                    {
+                                        include __DIR__ . "/vista_usuario_logeado.php";
+                                    }
+                                    else{
+                                        include __DIR__ . "/vista_usuario_no_logeado.php";
+                                    }
+                                ?>
+
                             </li>
                         </ul>
                     </nav>
                 </div>
 
-
-<!--                <div id="btn-usuario-logged">-->
-<!--                  <nav id="btn-usuario">-->
-<!--                    <ul>-->
-<!--                      <li>-->
-<!--                        <a>-->
-<!--                          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">-->
-<!--                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>-->
-<!--                            <circle cx="12" cy="7" r="4" />-->
-<!--                            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />-->
-<!--                          </svg>-->
-<!--                        </a>-->
-<!--                        <ul id="toggle-post-ini" class="sesion_iniciada">-->
-<!--                          <li><span id="mi-cuenta"><a href="#"><strong>Mi Cuenta</strong></a></span></li>-->
-<!--                          <li><span id="mis-compras"><a href="#"><strong>Mis Compras</strong></a></span></li>-->
-<!--                          <li><span id="cerrar-sesion"><a href="#"><strong>Cerrar Sesión</strong></a></span></li>-->
-<!--                        </ul>-->
-<!--                      </li>-->
-<!--                    </ul>-->
-<!--                  </nav>-->
-<!--                </div>-->
-
-                    <div id="carrito">
+                <div id="carrito">
                         <nav id="btn-carrito">
                             <ul>
                                 <li>
@@ -97,10 +79,8 @@
                             <p id="labelCestaVacia"> No tienes ningún producto </br>en tu cesta en estos momentos</p>
                         </fieldset>
                     </div>
-                    
             </div>
         </div>
-        
         <div id="navegador-ligas" class="separador-nav">
             <nav id="menu-desplegable-ligas">
                 <ul id="contenedores-ligas">

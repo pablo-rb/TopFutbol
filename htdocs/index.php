@@ -11,20 +11,18 @@
     {
         $_SESSION['numCarrito'] = 0;
         $_SESSION['precio'] = 0;
-        
     }
-    if(empty($_SESSION['usuario']))
+    if(!isset($_SESSION['user_id']))
     {
-        $_SESSION['usuario'] = 0;
+        $_SESSION['user_id'] = 'none';
     }
 
-    //echo "<pre>";
-    //var_dump($_SESSION);
-    //echo "</pre>";
+    
 
     error_reporting(0);
 
     $accion = $_GET['accion'];
+
 
     switch ($accion) {
         case 'La Liga':
@@ -53,6 +51,9 @@
             break;
         case 'mis_compras':
             include __DIR__ . '/resources/resource_mis_compras.php';
+            break;
+        case 'cerrar_sesion':
+            include __DIR__ . '/resources/resource_cerrar_sesion.php';
             break;
         case 'carrito':
             include __DIR__.'/resources/resource_carrito.php';
