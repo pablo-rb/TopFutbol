@@ -139,9 +139,11 @@ header div {
 }
 
 #carrito:hover {
-    background: #FF8210;
+    
     border-radius: 1rem;
 }
+
+
 
 /**------------------------------------------------------------------------------------**/
 /**MENU DESPLEGABLE LIGAS CON JQUERY**/

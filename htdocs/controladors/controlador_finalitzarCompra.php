@@ -4,7 +4,7 @@ include_once __DIR__ . "/../models/anadirPedidoUsuario.php";
 include_once __DIR__ . "/../models/vaciarCesta.php";
 session_start();
 $connexio = connectaBD();
-if ($_SESSION['usuario'] == 0)
+if ($_SESSION['user_id'] == 'none')
 {
     header("Location: /../index.php?accion=inicio_sesion");
 }

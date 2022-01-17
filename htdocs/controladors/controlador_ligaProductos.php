@@ -2,6 +2,7 @@
 
     include_once __DIR__ . "/../models/connectaBD.php";
     include_once __DIR__ . "/../models/detallesLigas.php";
+    include_once __DIR__ . "/../models/productoPorCategoria.php";
     $connexio = connectaBD();
 
     $liga = $_GET['accion'];
@@ -14,18 +15,13 @@
 
     //echo $idCat;
 
-    $sql = "SELECT *
-                    FROM producto p, categorias c
-                    WHERE p.idCategoria = c.idCategoria AND c.idCategoria = $idCat";
-    $consulta1 = $connexio->prepare($sql);
-    //$consulta1->bindParam("categoriaId", $categoriaId,PDO::PARAM_STR);
-    $consulta1->execute();
+    $result = productoPorCategoria($idCat, $connexio);
 
-    $result = $consulta1->fetchAll();
 
 //echo "<pre>";
 //var_dump($result);
 //echo "</pre>";
+
     include __DIR__ . "/../vistes/vista_ligaProductosTop.php";
 
     $counter = 0;
