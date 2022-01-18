@@ -94,6 +94,6 @@
         echo "Los datos no se han podido modificar";
     }
 
-    header("Location: /");
+    header("Location: /../index.php?accion=mi_cuenta");
 
     ?>
