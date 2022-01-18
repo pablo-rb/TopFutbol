@@ -6,7 +6,7 @@ function anadirPedido($connexio, $idProducto, $unidades)
     $idPedido = 1;
     
     $sql0 = "SELECT * 
-            FROM listapedidos
+            FROM carrito
             WHERE idProducto=:idProducto";
             
     $consulta0 = $connexio->prepare($sql0);
@@ -18,7 +18,7 @@ function anadirPedido($connexio, $idProducto, $unidades)
     {
         $result = $consulta0->fetch();
         $cantidad = $result['cantidad'] + $unidades;
-        $sql_update = "UPDATE listapedidos SET cantidad=:cantidad WHERE idProducto=:idProducto";
+        $sql_update = "UPDATE carrito SET cantidad=:cantidad WHERE idProducto=:idProducto";
         $consulta_update = $connexio->prepare($sql_update);
         $consulta_update->bindParam("idProducto", $idProducto,PDO::PARAM_STR);
         $consulta_update->bindParam("cantidad", $cantidad,PDO::PARAM_STR);
@@ -45,7 +45,7 @@ function anadirPedido($connexio, $idProducto, $unidades)
     $precio = $row['precio'];
 
     
-    $sql2 = "INSERT INTO listapedidos (idPedido, idProducto, cantidad, nombre, precio) 
+    $sql2 = "INSERT INTO carrito (idPedido, idProducto, cantidad, nombre, precio) 
                     VALUES (:idPedido, :idProducto, :unidades, :descripcion, :precio)";
 
     $consulta2 = $connexio->prepare($sql2);

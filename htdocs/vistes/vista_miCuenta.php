@@ -6,6 +6,8 @@
     <meta name="keywords" content="Futbol, Camisetas, Promocion, Baratas, Equipos">
     <meta name="description" content="Iniciar sesión en la cuenta de TopFutbol">
     <meta name="author" content="Pablo & Albert">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/menusDesplegables.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/styleModificarDatos.css" />
     <title>Mi Cuenta | TopFutbol</title>
 </head>
@@ -77,12 +79,72 @@
                     </div>
 
                 </div>
+
+            </div>
+            <div id="navegador-ligas" class="separador-nav">
+                <nav id="menu-desplegable-ligas">
+                    <ul id="contenedores-ligas">
+                        <li>
+                            <a href="#" class="letras-header">LaLiga</a>
+                            <ul>
+                                <li><a onclick="infoProducto(<?php echo (1)?>);">FC Barcelona</a></li>
+                                <li><a onclick="infoProducto(<?php echo (5)?>);">Real Madrid</a></li>
+                                <li><a onclick="infoProducto(<?php echo (25)?>);">Atlético de Madrid</a></li>
+                                <li><a onclick="infoProducto(<?php echo (27)?>);">Sevilla</a></li>
+                                <li><a onclick="infoProducto(<?php echo (28)?>);">Valencia</a></li>
+                                <li><a onclick="infoProducto(<?php echo (26)?>);">Athletic Bilbao</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="letras-header">Premier League</a>
+                            <ul>
+                                <li><a onclick="infoProducto(<?php echo (16)?>);">Chelsea FC</a></li>
+                                <li><a onclick="infoProducto(<?php echo (3)?>);">Manchester United</a></li>
+                                <li><a onclick="infoProducto(<?php echo (7)?>);">Manchester City</a></li>
+                                <li><a onclick="infoProducto(<?php echo (6)?>);">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="letras-header">Bundesliga</a>
+                            <ul>
+                                <li><a onclick="infoProducto(<?php echo (12)?>);">Bayern de Múnich</a></li>
+                                <li><a onclick="infoProducto(<?php echo (8)?>);">Borussia Dortmund</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="letras-header">Ligue1</a>
+                            <ul>
+                                <li><a onclick="infoProducto(<?php echo (4)?>);">PSG</a></li>
+                                <li><a onclick="infoProducto(<?php echo (20)?>);">AS Mónaco</a></li>
+                                <li><a onclick="infoProducto(<?php echo (18)?>);">O. Lyon</a></li>
+                                <li><a onclick="infoProducto(<?php echo (19)?>);">O. Marsella</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="letras-header">Serie A</a>
+                            <ul>
+                                <li><a onclick="infoProducto(<?php echo (2)?>);">Juventus</a></li>
+                                <li><a onclick="infoProducto(<?php echo (14)?>);">Inter</a></li>
+                                <li><a onclick="infoProducto(<?php echo (15)?>);">AC Milán</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="letras-header">Otras</a>
+                            <ul>
+                                <li><a onclick="infoProducto(<?php echo (11)?>);">River Plate</a></li>
+                                <li><a onclick="infoProducto(<?php echo (17)?>);">Ajax</a></li>
+                                <li><a onclick="infoProducto(<?php echo (10)?>);">América</a></li>
+                                <li><a onclick="infoProducto(<?php echo (9)?>);">LA Galaxy</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
 
     <main>
-        <form id="registro" action="../controladors/controlador_modificarDatosUsuario.php" method="post">
+        <form id="registro" action="../controladors/controlador_modificarDatosUsuario.php" method="post" enctype="multipart/form-data">
             <div class="logo-form">
                 <legend>
                     <a href="?accion=inicio">
@@ -91,39 +153,43 @@
                 </legend>
             </div>
             <div class="divCrea">
-                <label class="labelCrea">Modificar Mi Cuenta</label>
+                <label class="labelCrea">Datos de <?php echo $datosUser['nombre'] ?></label>
             </div>
             <fieldset class="registro2">
-
                 <legend class="labelDatos">DATOS DE ACCESO</legend>
                 <div class="datosAcceso">
                     <div class="correoRegistro">
                         <label for 'email'>CORREO ELECTRÓNICO</label>
                         <div id="divCorreo" class="divCampos">
-                            <input type ="email" placeholder="<?php echo ($datosUser['email']) ?>" name="email" required id="inputEmail" class="campos">
+                            <input type ="email" placeholder="<?php echo ($datosUser['email']) ?>" name="email" id="inputEmail" class="campos">
                         </div>
                         <div id="correoEnUso">
                             <label>El email introducido ya está en uso</label>
                         </div>
+                        <label for 'contraseña'>CONTRASEÑA ACTUAL</label>
+                        <div id="divContraseña" class="divCampos">
+                            <input type ="password" placeholder="Contraseña Actual" name="contraseña_actual" id="inputContraseña" class="campos">
+                        </div>
+
+                        <label for 'contraseña'>NUEVA CONTRASEÑA</label>
+                        <div id="divContraseña" class="divCampos">
+                            <input type ="password" placeholder="Nueva Contraseña" name="contraseña_nueva" id="inputContraseña" class="campos">
+                        </div>
                     </div>
-<!--                    <div class="contraseñas">-->
-<!--                        <div class="contraseñaRegistro">-->
-<!--                            <label for 'contraseña'>CONTRASEÑA</label>-->
-<!--                            <div id="divContraseña" class="divCampos">-->
-<!--                                <input type ="password" placeholder="Mínimo 8 caracteres" name="contraseña" minlenght="8" required id="inputPassword" class="campos">-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!---->
-<!--                        <div class="confirmaContraseña">-->
-<!--                            <label>CONFIRMA TU CONTRASEÑA</label>-->
-<!--                            <div id="divConfirma" class="divCampos">-->
-<!--                                <input type ="password" placeholder="Confirmar contraseña" minlenght="8" required id="inputConfirmar" class="campos">-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
+                    <div class="contraseñas">
+                        <div class="contraseñaRegistro">
+                            <div>
+                                <img src="<?php echo ($filesPublicPath . $datosUser['imagenPerfil']) ?>" class="imagen_perfil" alt="<?php echo "Imagen de Perfil de " . $datosUser['nombre'] ?>">
+                            </div>
+                            <div>
+                                <input type="file" name="profile_image">
+                            </div>
+                            <div>
+                                <input type="submit" onsubmit="" value="Actualizar Imagen">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-
             </fieldset>
             <fieldset class="registro3">
 
@@ -133,14 +199,14 @@
                         <div class="nombreRegistro">
                             <label for 'nombre' class="label">NOMBRE</label>
                             <div id="divNombre" class="divCampos">
-                                <input type ="text" placeholder="<?php echo ($datosUser['nombre']) ?>" name="nombre" required id="inputNombre" class="campos">
+                                <input type ="text" placeholder="<?php echo ($datosUser['nombre']) ?>" name="nombre" id="inputNombre" class="campos">
                             </div>
                         </div>
 
                         <div class="apellidoRegistro1">
                             <label for 'apellido1'>PRIMER APELLIDO</label>
                             <div id="divApellido1" class="divCampos">
-                                <input type ="text" placeholder="<?php echo ($datosUser['apellido1']) ?>" name="apellido1" required id="inputApellido1" class="campos">
+                                <input type ="text" placeholder="<?php echo ($datosUser['apellido1']) ?>" name="apellido1" id="inputApellido1" class="campos">
                             </div>
                         </div>
 
@@ -157,21 +223,21 @@
                         <div class="TELÉFONO">
                             <label for 'direccion'>DIRECCIÓN</label>
                             <div id="divTelefono" class="divCampos">
-                                <input type ="text" placeholder="<?php echo ($datosUser['direccion']) ?>" name="direccion" required id="inputTelefono" class="campos">
+                                <input type ="text" placeholder="<?php echo ($datosUser['direccion']) ?>" name="direccion" id="inputTelefono" class="campos">
                             </div>
                         </div>
 
                         <div class="poblacion">
                             <label for 'poblacion'>POBLACIÓN</label>
                             <div id="divPoblacion" class="divCampos">
-                                <input type ="text" placeholder="<?php echo ($datosUser['poblacion']) ?>" name="poblacion" required id="inputPoblacion" class="campos">
+                                <input type ="text" placeholder="<?php echo ($datosUser['poblacion']) ?>" name="poblacion" id="inputPoblacion" class="campos">
                             </div>
                         </div>
 
                         <div class="codigoPostal">
                             <label for 'codigoPostal'>CODIGO POSTAL</label>
                             <div id="divCodigoPostal" class="divCampos">
-                                <input type ="number" placeholder="<?php echo ($datosUser['codigopostal']) ?>" name="codigo" required id="inputCodigo" class="campos">
+                                <input type ="number" placeholder="<?php echo ($datosUser['codigopostal']) ?>" name="codigo" id="inputCodigo" class="campos">
                             </div>
                         </div>
                     </div>

@@ -17,7 +17,9 @@
         $_SESSION['user_id'] = 'none';
     }
 
-    
+//    echo "<pre>";
+//    var_dump($_SESSION['user_id']);
+//    echo "</pre>";
 
     error_reporting(0);
 
@@ -63,6 +65,9 @@
             break;
         case 'tramitada':
             include __DIR__. '/resources/resource_finalizarComanda.php';
+            break;
+        case 'Buscar':
+            include __DIR__. '/resources/resource_barraBusqueda.php';
             break;
         default:
             include __DIR__.'/resources/resource_principal.php';

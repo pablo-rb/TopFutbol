@@ -20,6 +20,6 @@
 <main>
     <section id="categoriasMain">
         <div class="titulos">
-            <h1><?php echo ($liga)?></h1>
+            <h1><?php if(isset($liga)){echo ($liga);} else {echo "Tu Búsqueda";} ?></h1>
         </div>
         <div class="contenedor-links-categorias">

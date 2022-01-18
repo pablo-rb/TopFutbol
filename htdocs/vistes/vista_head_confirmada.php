@@ -9,7 +9,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="../css/styleConfirmada.css">
     <script type="text/javascript" src="/js/funcions.js"></script>
-    <script type="text/javascript" src="../js/menusDesplegables.js"></script>    
     <title>TopFutbol Cesta</title>
 </head>
 

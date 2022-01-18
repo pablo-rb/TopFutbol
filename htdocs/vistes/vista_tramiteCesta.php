@@ -1,7 +1,7 @@
 
 
 
-    <main>   
+    <section>
         <fieldset id ="fieldProducto">
         <div class="contenidoPrincipalProducto">
             <div class="imagenProducto">
@@ -49,6 +49,6 @@
         </div>
         </fieldset>
         
-    </main>
+    </section>
 
     

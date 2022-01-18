@@ -2,7 +2,7 @@
 
     function productoTramite($connexio)
     {
-        $sql = "SELECT * FROM listapedidos";
+        $sql = "SELECT * FROM carrito";
         $consulta = $connexio->prepare($sql);   
         $consulta->execute();   
         

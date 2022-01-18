@@ -3,7 +3,7 @@ function vaciarCesta($connexio)
 {
     $idPedido = 1;
     
-    $sql1 = "DELETE FROM listapedidos WHERE idPedido=:idPedido";
+    $sql1 = "DELETE FROM carrito WHERE idPedido=:idPedido";
             
             
     $consulta = $connexio->prepare($sql1);

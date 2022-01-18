@@ -11,9 +11,10 @@
             </a>
         </div>
 
-        <div id = "buscador">
+        <form id = "buscador">
             <input type="text" id="barrabusqueda" placeholder="Buscar Camisetas" class="search" autocomplete="off">
-        </div>
+            <input type="submit" id="boton-buscar" name="enviar" value="Buscar">
+        </form>
 
         <div class="inicio-sesion-carrito">
 
@@ -80,6 +81,8 @@
                             </a>
                             <ul id="toggle-post-ini-carro">
                                 <li><span id="carro-precio"><a href="#"><strong>Precio: <?php echo($_SESSION['precio'])?>€</strong></a></span></li>
+                                <li><span ><a href="#" id="carro-tramitar" onclick="tramitarCarro(<?php echo($_SESSION['numCarrito'])?>)"><strong>TRAMITAR</strong></a></span></li>
+                                <li><span ><a href="#" id="carro-vaciar" onclick="anadirCesta('1','0','0') ; location.reload();"><strong>Vaciar</strong></a></span></li>
                             </ul>
                         </li>
                     </ul>

@@ -14,9 +14,12 @@
                 </a>
             </div>
 
-            <div id = "buscador">
-                <input type="text" id="barrabusqueda" placeholder="Buscar Camisetas" class="search" autocomplete="off">
-            </div>
+
+
+            <form id = "buscador" action="/index.php">
+                <input type="text" id="barrabusqueda" name="busqueda" placeholder="Buscar Camisetas" class="search" autocomplete="off">
+                <input type="submit" id="boton-buscar" name="accion" value="Buscar">
+            </form>
 
             <div class="inicio-sesion-carrito">
 

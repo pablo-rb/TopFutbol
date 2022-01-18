@@ -25,8 +25,8 @@
                 <h1>Destacados</h1>
             </div>
             <div class="contenedor-destacados">
-                <a href="">
-                    <img src="../img/banner-desktop-lanzamiento.png" alt="Camiseta Exclusiva Superclásico River Plate">
+                <a href="?accion=Otras">
+                    <img src="../img/banner-desktop-lanzamiento.png" alt="Camiseta Exclusiva Superclásico River Plate" class="superclasico">
                 </a>
             </div>
         </section>
