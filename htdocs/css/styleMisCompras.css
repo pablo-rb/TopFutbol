@@ -83,7 +83,6 @@ header div {
     padding: 0 30rem 0 30rem;
     display: flex;
 }
-
 #boton-buscar {
     padding: 1rem 1rem;
     background: white;
@@ -93,6 +92,9 @@ header div {
     margin-left: -1rem;
     border-radius: 0rem 1rem 1rem 0rem;
 }
+
+
+
 
 /**------------------------------------------------------------------------------------**/
 /**ACTUALIZACION DESPLEGABLE MENU INICIO DE SESION CON JQUERY**/
@@ -144,20 +146,77 @@ header div {
 #toggle-post-ini a:hover {
     background-color: #ffa365;
 }
+/**
+#carrito {
+    visibility:hidden;
+    margin: 0 0 0 1.5rem;
+}**/
+/**
+#carrito:hover {
+    background: #FF8210;
+    border-radius: 1rem;
+}**/
+#carrito {
+    display: initial;
+}
 
-/**ACTUALIZACION CARRITO**/
+#btn-carrito ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#btn-carrito a {
+    display: block;
+    color: white;
+    width: 10rem;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+}
+
+
+#cestaVacia
+{
+    background-color:white;
+    text-align: center;    
+    position:fixed;
+    left:136.5rem;
+    visibility: hidden;
+}
+
+
+#toggle-post-ini-carro {
+    position: absolute;
+    display: none;
+}
+
+#toggle-post-ini-carro a {
+    background-color: #FF8210;
+}
+
+/**
+#toggle-post-ini-carro a:hover {
+    background-color: #ffa365;
+}
+**/
+#carro-tramitar:hover, #carro-vaciar:hover{
+ background-color: #ffa365;
+}
+
+/**------------------------------------------------------------------------------------**/
 
 #carrito {
     margin: 0 0 0 1.5rem;
 }
 
-/*#carrito:hover {*/
-/*    background: #FF8210;*/
-/*    border-radius: 1rem;*/
-/*}*/
-
+#carrito:hover {
+    
+    border-radius: 1rem;
+}
 /**------------------------------------------------------------------------------------**/
 /**MENU DESPLEGABLE LIGAS CON JQUERY**/
+
 
 #menu-desplegable-ligas a {
     display: block;
@@ -177,7 +236,7 @@ header div {
 }
 
 #menu-desplegable-ligas>ul>li>ul>li>a:hover {
-    background: #171717;
+    background: #ffa365;
     color: white;
 }
 
@@ -199,89 +258,27 @@ header div {
 
 
 main {
-    display: flex;
+    
     justify-content: center;
+    padding: 5rem 20rem 0rem 50rem;
 }
 
-.contenidoPrincipalProducto {
-    display:flex;
-    margin-top:7rem;
-    padding-bottom: 7rem;
+#labelPedidoCorrecto
+{
+    font-size: large;
 }
 
-.datosProducto {
-    background-color:#FFF9F3;
-    font-style: normal;
-    border-radius: 2%;
+#fieldInfo
+{
+font-size:large;
+width:55rem;
 }
 
-.precioProducto{
-    display:flex;
+#labelInfoCorreo
+{
+    font-size:medium;
+    color:#FF8210;
 }
-.labelPrecio{
-    font-weight: 800;
-    font-size: 140%;
-    padding-right:20%;
-}
-
-.labelGratuitos{
-    color:#999;
-}
-
-.infoPedido{
-    padding-bottom: 4%;
-}
-
-.contenedorSelecionadores{
-    display:flex;
-}
-
-.etiquetaTallas{
-    padding-right: 2%;
-}
-.etiquetaUnidades{
-padding-right: 2%;
-}
-.selecionadorTallas{
-    padding-bottom: 4%;
-    padding-right: 20%;
-}
-
-.numeroUnidades{
-    width: 80%;
-}
-
-.letraTalla{
-     width:230%;
-}
-.selecionadorUnidades{
-    padding-bottom: 4%;
-}
-
-
-.inputComprar {
-    background-color:#FF8210;
-    font-size: 180%;
-    font-weight: 800;    
-    padding-top:10 rem;
-    border-radius: 1rem;
-
-}
-.botonComprar {
-    padding-top:100 px;
-    margin-top: 10 rem;
-    text-align: center;
-}
-
-.divStock{
-text-align: center;
-padding-top:2%;
-}
-
-.labelStock{
-    color:#999;
-}
-
 footer {
     display: block;
     background-color: black;
@@ -369,36 +366,28 @@ footer {
     justify-content:center;
 }
 
-.formularioPedido
-{
 
-width: 39rem;
+
+#fieldSeparador
+{
+    border-style:hidden;
+    border-bottom-style:solid;
+    
+
 }
 
-.tituloProducto
+
+#precioTotal
 {
-text-align:center;
+    position: relative;
+    left: 134rem;
+    top: 1rem;
 }
 
-@media screen and (max-width: 1660px){
-    #buscador {
-        padding: 0 10rem;
-    }
-    #contenidoPrincipal {
-        width: 90%;
-    }
-    a>img {
-        max-width: 100%;
-    }
-    .contenedor-links-camisetas {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-    }
-    .contenedor-links-categorias {
-        margin-left: -4rem;
-    }
-    footer {
-        max-width: inherit;
-    }
+
+
+.infoProductos
+{
+    display:flex;
+    padding-top: 2rem;
 }

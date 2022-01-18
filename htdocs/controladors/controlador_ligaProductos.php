@@ -13,30 +13,17 @@
 
     $idCat = $categoriaId["idCategoria"];
 
-    //echo $idCat;
 
     $result = productoPorCategoria($idCat, $connexio);
 
-
-//echo "<pre>";
-//var_dump($result);
-//echo "</pre>";
 
     include __DIR__ . "/../vistes/vista_ligaProductosTop.php";
 
     $counter = 0;
     foreach ($result as $fila)
     {
-        //echo $fila["idProducto"] . " " . $fila["descripcion"] .  " " . $fila["foto"] .  "<br />" ;
         include __DIR__ . "/../vistes/vista_productoLiga.php";
     }
-
-//    for ($i = 0; $i < sizeof($result); $i++)
-//    {
-//        //echo $fila["idProducto"] . " " . $fila["descripcion"] .  " " . $fila["foto"] .  "<br />" ;
-//        include __DIR__ . "/../vistes/vista_productoResumen.php";
-//
-//    }
 
     include __DIR__ . "/../vistes/vista_ligaProductosBottom.php";
 

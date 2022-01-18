@@ -71,15 +71,27 @@ header div {
 }
 
 #buscador input.search {
-    border-radius: 1rem;
     outline: none;
     color: darkgrey;
     border: 0.2rem solid #FF8210;
+    border-right-color: white;
+    border-radius: 1rem 0rem 0rem 1rem;
 }
 
 #buscador {
     margin: auto;
     padding: 0 30rem 0 30rem;
+    display: flex;
+}
+
+#boton-buscar {
+    padding: 1rem 1rem;
+    background: white;
+    border: 0.2rem solid #FF8210;
+    cursor:pointer;
+    border-left-color: white;
+    margin-left: -1rem;
+    border-radius: 0rem 1rem 1rem 0rem;
 }
 
 /**------------------------------------------------------------------------------------**/
@@ -163,7 +175,6 @@ header div {
     position:fixed;
     left:136.5rem;
     visibility: hidden;
-    
 }
 
 
@@ -252,6 +263,9 @@ main {
     padding: 1rem 0rem;
 }
 
+.superclasico {
+    margin-left: 10rem;
+}
 
 
 .contenedor-links-categorias {
@@ -395,4 +409,34 @@ footer {
 #contenedor-newLetter-redesSociales{
     display:flex;
     justify-content:center;
+}
+
+
+@media screen and (max-width: 1660px){
+    #buscador {
+        padding: 0 10rem;
+    }
+    #contenidoPrincipal {
+        width: 90%;
+    }
+    a>img {
+        max-width: 100%;
+    }
+    .superclasico {
+        margin-left: 0rem;
+    }
+    .contenedor-links-camisetas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    .contenedor-links-categorias {
+        margin-left: -4rem;
+    }
+    footer {
+        max-width: inherit;
+    }
+    #cestaVacia {
+        margin-left: -45rem;
+    }
 }

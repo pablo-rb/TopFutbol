@@ -5,7 +5,7 @@ html {
 body {
     font-size: 16px;
     font-family: Calibri;
-    background-color: #FF8210;
+    background-color: #999999;
     color: black;
 }
 
@@ -177,6 +177,45 @@ header div {
     border-radius: 1rem;
 }
 
+/**------------------------------------------------------------------------------------**/
+/**MENU DESPLEGABLE LIGAS CON JQUERY**/
+
+#menu-desplegable-ligas a {
+    display: block;
+    width: 15rem;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+    background-color: black;
+}
+
+#menu-desplegable-ligas a:hover {
+    background-color: #FF8210;
+}
+
+#menu-desplegable-ligas>ul>li>ul>li {
+    position: relative;
+}
+
+#menu-desplegable-ligas>ul>li>ul>li>a:hover {
+    background: #171717;
+    color: white;
+}
+
+#menu-desplegable-ligas ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+#menu-desplegable-ligas>ul>li>ul {
+    display: none;
+}
+
+#contenedores-ligas {
+    display: flex;
+}
+
 /**----------------------------------MAIN--------------------------------------------------**/
 
 form {
@@ -189,7 +228,7 @@ form {
     padding: 2rem 2rem;
     box-sizing:border-box;
     text-align: center;
-    position: relative;
+    position: static;
 }
 
 .contenedor-formulario {
@@ -216,7 +255,14 @@ legend img {
     padding-bottom: 4%;
 }
 
-
+.imagen_perfil {
+    width: auto;
+    height: auto;
+    max-width: 20rem;
+    max-height: 20rem;
+    border-radius: 5rem;
+    border: 0.5rem solid #FF8210;
+}
 
 .registro2{
     border-style:hidden;
@@ -250,9 +296,6 @@ legend img {
 .divCampos{
     padding-top:4%;
 
-}
-#inputEmail{
-    width:200%;
 }
 
 #correoEnUso{
@@ -291,7 +334,7 @@ legend img {
 }
 
 .campos{
-    width: 245%;
+    width: 35rem;
     padding: 1rem 0.5rem;
     margin: 0 0 3rem 0;
     box-sizing: border-box;
@@ -306,6 +349,7 @@ input[type=submit] {
     color: black;
     padding: 1rem 1rem;
     margin: 4rem 0.5rem;
+    margin-top: 0rem;
     cursor: pointer;
     border-radius: 0.5rem 0.5rem;
 }
@@ -321,3 +365,17 @@ input[type=submit]:hover {
     text-decoration: underline;
 }
 
+input[type=file] {
+    background-color: white;
+    border: 0.1rem solid #FF8210;
+    color: black;
+    padding: 1rem 1rem;
+    margin: 4rem 0.5rem;
+    cursor: pointer;
+    border-radius: 0.5rem 0.5rem;
+}
+
+input[type=file]:hover {
+    background-color: #FF8210; /* Green */
+    color: white;
+}

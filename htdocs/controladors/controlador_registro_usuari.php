@@ -15,7 +15,8 @@
     }
     else
     {
-        include_once __DIR__ . "/../vistes/vista_iniciarSesion.php";
+        //include_once __DIR__ . "/../vistes/vista_iniciarSesion.php";
+        header("Location: /../index.php?accion=inicio_sesion");
     }
     ?>
         

@@ -5,10 +5,9 @@
     $connexio = connectaBD();
 
     $datosUser = obtenerDatosUsuario($connexio);
+    $filesPublicPath = "/../public_html/ficheros/";
 
-//    echo "<pre>";
-//    var_dump($datosUser);
-//    echo "</pre>";
+
     if($datosUser == 0)
     {
         echo "Error al obtener los datos";

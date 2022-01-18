@@ -187,7 +187,7 @@ header div {
 /**------------------------------------------------------------------------------------**/
 
 
-main {
+section {
     display: flex;
     justify-content: center;
 }
@@ -434,7 +434,30 @@ padding-left: 0.2rem;
 .numeroUnidades
 {
     width: 5rem;
-    
-    
-    
+}
+
+@media screen and (max-width: 1660px){
+    #buscador {
+        padding: 0 10rem;
+    }
+    #contenidoPrincipal {
+        width: 90%;
+    }
+    a>img {
+        max-width: 100%;
+    }
+    .contenedor-links-camisetas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    .contenedor-links-categorias {
+        margin-left: -4rem;
+    }
+    #finalizar-compra {
+        margin-left: -30rem;
+    }
+    footer {
+        max-width: inherit;
+    }
 }

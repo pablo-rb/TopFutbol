@@ -62,3 +62,12 @@ $.ajax({type: "POST",url: "controladors/controlador_actualizarUnidades.php",data
 
 }
 
+// function buscarCamisetas($busqueda)
+// {
+//
+//     $.ajax({type: "POST",url: "controladors/controlador_barraBusqueda.php",data:{busqueda: $busqueda}, success: function(data){
+//             $("body").html(data);
+//         }
+//     })
+//
+// }

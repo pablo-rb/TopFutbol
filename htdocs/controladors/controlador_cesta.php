@@ -25,6 +25,5 @@
         $pedido = anadirPedido($connexio, $id, $unidades);
     }
 
-    //include_once __DIR__ . "/../index.php";
 ?>
         
